@@ -3,7 +3,6 @@ using System.Collections;
 using System.IO;
 using System.Net;
 using UnityEngine;
-using UnityEngine.UI;
 using Varwin.Public;
 
 namespace Varwin.Types.StreamingTV_fde2ad18ba314409b14c718caa6375b9
@@ -12,22 +11,39 @@ namespace Varwin.Types.StreamingTV_fde2ad18ba314409b14c718caa6375b9
     [Locale(SystemLanguage.Russian,"Потоковое ТВ")]
     public class StreamingTV : VarwinObject
     {
-
-        public RawImage Screen;
-        public AspectRatioFitter Fitter;
-
         private Texture2D texture;
         private Stream stream;
         private IEnumerator coroutine;
         private WebResponse resp;
 
+        public Renderer Screen;
+
         void Start()
         {
-            
+            Screen.material = Instantiate<Material>(Screen.material);
+        }
+        
+        [Getter("get_wrapper")]
+        [Locale(SystemLanguage.English, "Get screen for sharing")]
+        [Locale(SystemLanguage.Russian, "Получить экран для шеринга")]
+        public Wrapper screen
+        {
+            get
+            {
+                return this.Wrapper();
+            }
+        }
+
+        [Action("share_screen")]
+        [Locale(SystemLanguage.English, "Share screen")]
+        [Locale(SystemLanguage.Russian, "Поделиться экраном")]
+        public void ShareScreen(Wrapper anotherScreen)
+        {
+            anotherScreen.GetGameObject().GetComponent<StreamingTV>().Screen.material = this.Screen.material;
         }
 
         [Action("stop_stream")]
-        [Locale(SystemLanguage.English, "Stop Streaming")]
+        [Locale(SystemLanguage.English, "Stop streaming")]
         [Locale(SystemLanguage.Russian, "Остановить стрим")]
         public void StopStream()
         {
@@ -40,7 +56,7 @@ namespace Varwin.Types.StreamingTV_fde2ad18ba314409b14c718caa6375b9
         }
 
         [Action("start_stream")]
-        [Locale(SystemLanguage.English, "Start Streaming")]
+        [Locale(SystemLanguage.English, "Start streaming")]
         [Locale(SystemLanguage.Russian, "Запустить стрим")]
         public void StartStream(string url)
         {
@@ -82,7 +98,7 @@ namespace Varwin.Types.StreamingTV_fde2ad18ba314409b14c718caa6375b9
 
                 texture.LoadImage(ms.GetBuffer());
 
-                Screen.texture = texture;
+                Screen.material.mainTexture = texture;
 
                 stream.ReadByte();
                 stream.ReadByte();
