@@ -56,50 +56,6 @@ namespace RobboVarwin
 
 
 
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Sensor 1")]
-        [Locale(SystemLanguage.Russian, "Датчик 1")]
-        public string RobotSensor_Sensor1;
-
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Sensor 2")]
-        [Locale(SystemLanguage.Russian, "Датчик 2")]
-        public string RobotSensor_Sensor2;
-
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Sensor 3")]
-        [Locale(SystemLanguage.Russian, "Датчик 3")]
-        public string RobotSensor_Sensor3;
-
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Sensor 4")]
-        [Locale(SystemLanguage.Russian, "Датчик 4")]
-        public string RobotSensor_Sensor4;
-
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Sensor 5")]
-        [Locale(SystemLanguage.Russian, "Датчик 5")]
-        public string RobotSensor_Sensor5;
-
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Trip meter L")]
-        [Locale(SystemLanguage.Russian, "Счетчик пути Л")]
-        public string RobotSensor_TripMeterL;
-
-        [Value("robot_sensor")]
-        [HideInInspector]
-        [Locale(SystemLanguage.English, "Trip meter R")]
-        [Locale(SystemLanguage.Russian, "Счетчик пути П")]
-        public string RobotSensor_TripMeterR;
-
-
-
         [Action("start_thread")]
         [Locale(SystemLanguage.English, "Start ROBBO thread")]
         [Locale(SystemLanguage.Russian, "Запустить РОББО поток")]
@@ -175,12 +131,6 @@ namespace RobboVarwin
         [Locale(SystemLanguage.English, "set direction", "L", "R", "power L", "R", "%")]
         [Locale(SystemLanguage.Russian, "уст. направление", "Л", "П", "мощность Л", "П", "%")]
         public abstract void SetMotors(string leftDirection, string rightDirection, float leftPercentage, float rightPercentage);
-
-        [Action("sensor_value")]
-        [Values("robot_sensor")]
-        [Locale(SystemLanguage.English, "Robot")]
-        [Locale(SystemLanguage.Russian, "Робот")]
-        public abstract float SensorValue(string sensor_name);
     }
 }
 

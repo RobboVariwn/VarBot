@@ -1,0 +1,10 @@
+﻿{
+    "name": "StreamingTV_fde2ad18ba314409b14c718caa6375b9",
+    "references": [
+        "VarwinCore"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

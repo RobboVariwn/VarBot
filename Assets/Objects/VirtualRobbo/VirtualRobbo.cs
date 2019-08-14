@@ -216,18 +216,5 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             
         }
-
-        public override float SensorValue(string sensor_name)
-        {
-            switch (sensor_name)
-            {
-                case RobboVarwin.Values.RobotSensor_TripMeterL:
-                    return LeftEncoder.Steps;
-                case RobboVarwin.Values.RobotSensor_TripMeterR:
-                    return RightEncoder.Steps;
-            }
-
-            return -1F;
-        }
     }
 }
