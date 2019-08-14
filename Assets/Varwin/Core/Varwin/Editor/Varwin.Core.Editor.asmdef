@@ -1,0 +1,19 @@
+{
+    "name": "Varwin.Core.Editor",
+    "references": [
+        "VarwinCore",
+        "ZFBrowser",
+        "ZFBrowser-Editor",
+        "Sketchfab"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

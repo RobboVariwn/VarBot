@@ -1,0 +1,15 @@
+{
+    "name": "VirtualRobbo_d948cb30690c4f29936b5f7625e2487f",
+    "references": [
+        "VarwinCore",
+        "RobboVarwin"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

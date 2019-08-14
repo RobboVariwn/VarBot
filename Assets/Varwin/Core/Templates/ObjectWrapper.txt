@@ -1,0 +1,38 @@
+/******************************************************************
+*******************************************************************
+*
+*                      WARNING!
+*  This class is auto-generated. Do not edit the class manually. 
+*  It could disrupt running of the object.
+* 
+*  
+*  (c) 2019
+*
+*******************************************************************
+*******************************************************************/
+
+/* VARWIN_AUTOGEN_MARK_1.0 */
+
+using UnityEngine;
+
+namespace Varwin.Types.{%Object%}_{%Guid%}
+{
+    public class {%Object%}Wrapper : Wrapper
+    {
+        private readonly {%Object%} _object;
+
+        public {%Object%}Wrapper(GameObject gameObject) : base(gameObject)
+        {
+            _object = gameObject.GetComponent<{%Object%}>();
+            
+            {%EventsSubscription%}
+        }
+        
+        {%Values%}
+        {%Properties%}
+        {%Checkers%}
+        {%Actions%}
+        {%Events%}
+        {%Dynamics%}
+    }
+}

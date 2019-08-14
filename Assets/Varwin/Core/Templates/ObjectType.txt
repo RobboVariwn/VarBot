@@ -1,0 +1,22 @@
+using UnityEngine;
+using Varwin.Public;
+
+namespace Varwin.Types.{%Object%}_{%Guid%}
+{
+    [Locale(SystemLanguage.English,"{%Object_En%}")]
+    [Locale(SystemLanguage.Russian,"{%Object_Rus%}")]
+    public class {%Object%} : VarwinObject
+    {
+    
+        void Start()
+        {
+            
+        }
+
+        void Update()
+        {
+             
+        }
+
+    }
+}

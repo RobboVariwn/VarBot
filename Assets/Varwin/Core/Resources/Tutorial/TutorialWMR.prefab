@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7930945432518875175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4723288995973757679}
+  - component: {fileID: 713607370434654502}
+  m_Layer: 0
+  m_Name: TutorialWMR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4723288995973757679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7930945432518875175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.27255195, y: -0.84486276, z: 1.2466111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &713607370434654502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7930945432518875175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bab4ee70c21c374b9b81ccbc495fa43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use: {fileID: 21300000, guid: 57394d9568896b14b9ece2084bf17acf, type: 3}
+  Teleport: {fileID: 21300000, guid: 53c9536bb21588f4aace0e1a14b2c9f7, type: 3}
+  _menuEn: {fileID: 21300000, guid: af798a0e1232d8541914c79b3f3d0b29, type: 3}
+  _menuRu: {fileID: 21300000, guid: 795ff3c922ff2ca4eab86e58f007b7e3, type: 3}
+  Grab: {fileID: 21300000, guid: 57394d9568896b14b9ece2084bf17acf, type: 3}
+  Eye: {fileID: 21300000, guid: c898ef6499efa274c86a37aedf74e19d, type: 3}

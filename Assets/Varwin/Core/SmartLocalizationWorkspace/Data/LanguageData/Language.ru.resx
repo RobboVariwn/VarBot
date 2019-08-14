@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BUTTON" xml:space="preserve">
+		<value>Кнопка</value>
+	</data>
+	<data name="CANCEL" xml:space="preserve">
+		<value>Отмена</value>
+	</data>
+	<data name="CANNOT_DELETE_OBJECT_LOGIC" xml:space="preserve">
+		<value>Удаление невозможно: объект задействован в логике.</value>
+	</data>
+	<data name="CANNOT_NOT_PREVEW" xml:space="preserve">
+		<value>Это невозможно в режиме предпросмотра</value>
+	</data>
+	<data name="CHOOSE_PARENT" xml:space="preserve">
+		<value>Назначить родительский объект </value>
+	</data>
+	<data name="CHOOSE_PROJECT_CONFIG" xml:space="preserve">
+		<value>Выберите конфигурацию мира</value>
+	</data>
+	<data name="CLOSE_BUTTON" xml:space="preserve">
+		<value>Закрыть</value>
+	</data>
+	<data name="COMPILE_CODE_ERROR" xml:space="preserve">
+		<value>Ошибка компиляции</value>
+	</data>
+	<data name="CONNECTING" xml:space="preserve">
+		<value>Соединение...</value>
+	</data>
+	<data name="CURRENT_LOCATION_DELETED" xml:space="preserve">
+		<value>Текущая локация была удалена</value>
+	</data>
+	<data name="DELETE_OBJECT" xml:space="preserve">
+		<value>Удалить этот объект</value>
+	</data>
+	<data name="DISPLAY" xml:space="preserve">
+		<value>Дисплей</value>
+	</data>
+	<data name="ENTER_ROOM" xml:space="preserve">
+		<value>Вход в комнату...</value>
+	</data>
+	<data name="ENVIRONMENT_NOT_FOUND" xml:space="preserve">
+		<value>Ошибка. Локация не загружена</value>
+	</data>
+	<data name="ERROR_READ_STARTUP_ARGS" xml:space="preserve">
+		<value>Невозможно прочесть стартовые параметры</value>
+	</data>
+	<data name="ERROR_SERVER_DISCONECT" xml:space="preserve">
+		<value>Ошибка. Сервер не отвечает</value>
+	</data>
+	<data name="EXCECUTE_LOGIC_ERROR" xml:space="preserve">
+		<value>Ошибка выполнения логики</value>
+	</data>
+	<data name="EXCEPTION_IN_OBJECT" xml:space="preserve">
+		<value>Ошибка в объекте</value>
+	</data>
+	<data name="EXIT" xml:space="preserve">
+		<value>Выход</value>
+	</data>
+	<data name="GET_LOCATION_DATA" xml:space="preserve">
+		<value>Получение данных о локации...</value>
+	</data>
+	<data name="GROUP_NOT_SAVED" xml:space="preserve">
+		<value>Несохраненные изменения будут потеряны. Сохранить?</value>
+	</data>
+	<data name="HEADSET_TRACKING_LOST" xml:space="preserve">
+		<value>Шлем не найден</value>
+	</data>
+	<data name="INIT_LOGIC_ERROR" xml:space="preserve">
+		<value>Ошибка инициализации логики</value>
+	</data>
+	<data name="JOIN_TO_ROOM" xml:space="preserve">
+		<value>Подключение к комнате...</value>
+	</data>
+	<data name="LAMP" xml:space="preserve">
+		<value>Лампа</value>
+	</data>
+	<data name="LETS_GO" xml:space="preserve">
+		<value>Поехали!</value>
+	</data>
+	<data name="LICENSE_KEY_ERROR" xml:space="preserve">
+		<value>Не могу получить информацию о лицензии</value>
+	</data>
+	<data name="LOAD_OBJECT_ERROR" xml:space="preserve">
+		<value>Ошибка загрузки объекта</value>
+	</data>
+	<data name="LOAD_PROJECTS_ERROR" xml:space="preserve">
+		<value>Ошибка загрузки списка проектов</value>
+	</data>
+	<data name="LOAD_SCENE_ERROR" xml:space="preserve">
+		<value>Ошибка загрузки локации</value>
+	</data>
+	<data name="LOADING" xml:space="preserve">
+		<value>Загрузка</value>
+	</data>
+	<data name="LOADING_FILE" xml:space="preserve">
+		<value>Загрузка {0}... {1} из {2} Мб</value>
+	</data>
+	<data name="LOADING_LOCATION" xml:space="preserve">
+		<value>Загружаю локацию «{0}»...</value>
+	</data>
+	<data name="MODE" xml:space="preserve">
+		<value>Режим</value>
+	</data>
+	<data name="NO" xml:space="preserve">
+		<value>Нет</value>
+	</data>
+	<data name="NOT_FOR_COMMERCIAL_USE" xml:space="preserve">
+		<value>Демо-версия Varwin.
+Пожалуйста, приобретите Professional или Business версию, чтобы снять демонстрационные ограничения.</value>
+	</data>
+	<data name="OK" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_CHANGE_MODE" xml:space="preserve">
+		<value>Вы в режиме редактирования. Перейдите в режим просмотра: откройте меню, наведите луч-указку на кнопку «‎Режим»‎ и нажмите триггер</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_BUTTON" xml:space="preserve">
+		<value> и выберите объект «Простая кнопка»</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_DISPLAY" xml:space="preserve">
+		<value> и выберите объект «Простой дисплей»</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_LAMP" xml:space="preserve">
+		<value> и выберите объект «Простая лампочка»</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_SAVE" xml:space="preserve">
+		<value> и нажмите кнопку Сохранить</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_VIEW" xml:space="preserve">
+		<value> и нажмите кнопку Режим</value>
+	</data>
+	<data name="ONBOARDING_POPUP_PREVIEW_MENU_CHANGE_MODE" xml:space="preserve">
+		<value>Отлично! Теперь научимся переключать режимы
+Нажмите кнопку «Меню» и кликните на иконку «глаз»
+</value>
+	</data>
+	<data name="ONBOARDING_POPUP_START_BUTTON" xml:space="preserve">
+		<value>Начать</value>
+	</data>
+	<data name="ONBOARDING_TOOLTIP_POINTER_CLICK_EYE" xml:space="preserve">
+		<value>Наведите луч-указку на иконку «глаз» и нажмите триггер</value>
+	</data>
+	<data name="ONBOARDING_TOOLTIP_PRESS_EYE_ICON" xml:space="preserve">
+		<value>Нажмите на иконку «глаз», чтобы перейти в режим редактирования</value>
+	</data>
+	<data name="PHOTON_DISCONECT" xml:space="preserve">
+		<value>Отключение от сервера мультиплеера</value>
+	</data>
+	<data name="PROJECT_CONFIG_ERROR" xml:space="preserve">
+		<value>Ошибка. Конфигурация проекта не загружена</value>
+	</data>
+	<data name="PROJECT_CONFIG_NULL" xml:space="preserve">
+		<value>Конфигурации мира не существует</value>
+	</data>
+	<data name="READ_LAUNCH_ARGS_RABBIR_ERROR" xml:space="preserve">
+		<value>Ошибка. Сервер недоступен</value>
+	</data>
+	<data name="ROOM_CREATING" xml:space="preserve">
+		<value>Создание комнаты...</value>
+	</data>
+	<data name="RUNTIME_CODE_ERROR" xml:space="preserve">
+		<value>Ошибка исполнения логики</value>
+	</data>
+	<data name="SAVE" xml:space="preserve">
+		<value>Сохранить</value>
+	</data>
+	<data name="SAVE_ERROR" xml:space="preserve">
+		<value>Ошибка сохранения</value>
+	</data>
+	<data name="SAVED" xml:space="preserve">
+		<value>Сохранено</value>
+	</data>
+	<data name="SCENE_LOADING" xml:space="preserve">
+		<value>Загрузка локации...</value>
+	</data>
+	<data name="SCENE_OBJECTS" xml:space="preserve">
+		<value>объектов на сцене</value>
+	</data>
+	<data name="SEND_REPORT" xml:space="preserve">
+		<value>Отправить отчет</value>
+	</data>
+	<data name="SPAWN_POINT_ERROR" xml:space="preserve">
+		<value>Стартовая позиция игрока не найдена</value>
+	</data>
+	<data name="SPAWN_WITH_PARENT" xml:space="preserve">
+		<value>Назначать этот объект родительским,
+для новых создаваемых объектов</value>
+	</data>
+	<data name="TRY_AGAIN" xml:space="preserve">
+		<value>Повторить</value>
+	</data>
+	<data name="TRY_TO_CONNECT_TO_RANDOM_ROOM" xml:space="preserve">
+		<value>Попытка соединения со случайной комнатой...</value>
+	</data>
+	<data name="TUTORIAL_MOVE_ME" xml:space="preserve">
+		<value>Перемести меня</value>
+	</data>
+	<data name="TUTORIAL_POPUP_BACK_TO_RMS" xml:space="preserve">
+		<value>Отлично! Теперь снимите шлем и перейдите в редактор логики</value>
+	</data>
+	<data name="TUTORIAL_POPUP_HAPPY_END" xml:space="preserve">
+		<value>Вы научились менять режимы. Отлично! Теперь вы можете создавать собственные проекты</value>
+	</data>
+	<data name="TUTORIAL_POPUP_HELLO" xml:space="preserve">
+		<value>Добро пожаловать в режим обучения платформы VARWIN</value>
+	</data>
+	<data name="TUTORIAL_POPUP_LOGIC_START" xml:space="preserve">
+		<value>Включен режим предпросмотра. Логика взаимодействия объектов работает. Нажмите на объект «Кнопка»</value>
+	</data>
+	<data name="TUTORIAL_POPUP_MOVING" xml:space="preserve">
+		<value>Для перемещения по сцене: нажмите тачпад, наведите указку на нужную зону, отпустите тачпад</value>
+	</data>
+	<data name="TUTORIAL_POPUP_OBJECT_MOVE" xml:space="preserve">
+		<value>Отлично, объект «{0}» добавлен. Для перемещения объектов используйте кнопку захвата</value>
+	</data>
+	<data name="TUTORIAL_POPUP_OPEN_MENU" xml:space="preserve">
+		<value>Откройте меню {0}</value>
+	</data>
+	<data name="TUTORIAL_TOOL_TIP_BUTTON_USE" xml:space="preserve">
+		<value>Поднесите контроллер к кнопке и нажмите на триггер</value>
+	</data>
+	<data name="TUTORIAL_TOOL_TIP_PRESS_ME" xml:space="preserve">
+		<value>Нажми меня</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_CANCEL_SPAWN" xml:space="preserve">
+		<value>Отменить выбор</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_GRIP" xml:space="preserve">
+		<value>Нажмите и удерживайте для перемещения</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_MOVING" xml:space="preserve">
+		<value>Нажмите тачпад, наведите указку на место перемещения и отпустите тачпад</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OBJECT_SELECT" xml:space="preserve">
+		<value>Наведите луч-указку на объект «{0}» и нажмите триггер</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OBJECT_SPAWN" xml:space="preserve">
+		<value>Нажмите триггер для размещения объекта «{0}»</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OPEN_MENU" xml:space="preserve">
+		<value>Нажмите кнопку для открытия меню</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_POINTER_CLICK" xml:space="preserve">
+		<value>Наведите луч-указку на кнопку «{0}» и нажмите триггер</value>
+	</data>
+	<data name="UNKNOWN_ERROR" xml:space="preserve">
+		<value>Неизвестная ошибка</value>
+	</data>
+	<data name="UNLINK_PARENT" xml:space="preserve">
+		<value>Отвязать родительский объект</value>
+	</data>
+	<data name="YES" xml:space="preserve">
+		<value>Да</value>
+	</data>
+</root>

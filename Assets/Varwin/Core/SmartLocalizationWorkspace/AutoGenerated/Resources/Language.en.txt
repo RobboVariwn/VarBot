@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BUTTON" xml:space="preserve">
+		<value>Button</value>
+	</data>
+	<data name="CANCEL" xml:space="preserve">
+		<value>Cancel</value>
+	</data>
+	<data name="CANNOT_DELETE_OBJECT_LOGIC" xml:space="preserve">
+		<value>Cannot delete. Object is included in logic</value>
+	</data>
+	<data name="CANNOT_NOT_PREVEW" xml:space="preserve">
+		<value>Can't do it in preview mode</value>
+	</data>
+	<data name="CHOOSE_PARENT" xml:space="preserve">
+		<value>Choose a parent object</value>
+	</data>
+	<data name="CHOOSE_PROJECT_CONFIG" xml:space="preserve">
+		<value>Choose project configuration</value>
+	</data>
+	<data name="CLOSE_BUTTON" xml:space="preserve">
+		<value>Close</value>
+	</data>
+	<data name="COMPILE_CODE_ERROR" xml:space="preserve">
+		<value>Compilation error</value>
+	</data>
+	<data name="CONNECTING" xml:space="preserve">
+		<value>Connecting...</value>
+	</data>
+	<data name="CURRENT_LOCATION_DELETED" xml:space="preserve">
+		<value>Current scene template was deleted</value>
+	</data>
+	<data name="DELETE_OBJECT" xml:space="preserve">
+		<value>Delete this object</value>
+	</data>
+	<data name="DISPLAY" xml:space="preserve">
+		<value>Display</value>
+	</data>
+	<data name="ENTER_ROOM" xml:space="preserve">
+		<value>Entering room...</value>
+	</data>
+	<data name="ENVIRONMENT_NOT_FOUND" xml:space="preserve">
+		<value>Error. Scene template not found</value>
+	</data>
+	<data name="ERROR_READ_STARTUP_ARGS" xml:space="preserve">
+		<value>Error. Can't read command line arguments</value>
+	</data>
+	<data name="ERROR_SERVER_DISCONECT" xml:space="preserve">
+		<value>Error. Server is offline</value>
+	</data>
+	<data name="EXCECUTE_LOGIC_ERROR" xml:space="preserve">
+		<value>Logic execution failure</value>
+	</data>
+	<data name="EXCEPTION_IN_OBJECT" xml:space="preserve">
+		<value>Error in an object</value>
+	</data>
+	<data name="EXIT" xml:space="preserve">
+		<value>Exit</value>
+	</data>
+	<data name="GET_LOCATION_DATA" xml:space="preserve">
+		<value>Getting scene template data...</value>
+	</data>
+	<data name="GROUP_NOT_SAVED" xml:space="preserve">
+		<value>Unsaved changes will be lost. Save the changes?</value>
+	</data>
+	<data name="HEADSET_TRACKING_LOST" xml:space="preserve">
+		<value>No Headsets Tracking</value>
+	</data>
+	<data name="INIT_LOGIC_ERROR" xml:space="preserve">
+		<value>Logic initialization error</value>
+	</data>
+	<data name="JOIN_TO_ROOM" xml:space="preserve">
+		<value>Joining room...</value>
+	</data>
+	<data name="LAMP" xml:space="preserve">
+		<value>Lamp</value>
+	</data>
+	<data name="LETS_GO" xml:space="preserve">
+		<value>Let's go!</value>
+	</data>
+	<data name="LICENSE_KEY_ERROR" xml:space="preserve">
+		<value>Can not get license information</value>
+	</data>
+	<data name="LOAD_OBJECT_ERROR" xml:space="preserve">
+		<value>Can't load the object</value>
+	</data>
+	<data name="LOAD_PROJECTS_ERROR" xml:space="preserve">
+		<value>Can't load projects list</value>
+	</data>
+	<data name="LOAD_SCENE_ERROR" xml:space="preserve">
+		<value>Can't load scene template</value>
+	</data>
+	<data name="LOADING" xml:space="preserve">
+		<value>Loading</value>
+	</data>
+	<data name="LOADING_FILE" xml:space="preserve">
+		<value>Downloading {0}... {1} from {2} Mb</value>
+	</data>
+	<data name="LOADING_LOCATION" xml:space="preserve">
+		<value>Loading scene template "{0}"...</value>
+	</data>
+	<data name="MODE" xml:space="preserve">
+		<value>Mode</value>
+	</data>
+	<data name="NO" xml:space="preserve">
+		<value>No</value>
+	</data>
+	<data name="NOT_FOR_COMMERCIAL_USE" xml:space="preserve">
+		<value>Varwin demo-version.
+Please upgrade to Professional or Business edition to remove demo restriction.</value>
+	</data>
+	<data name="OK" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_CHANGE_MODE" xml:space="preserve">
+		<value>You are in Edit mode. Proceed to View mode: open the menu, point the ray at the "Mode" button and press the trigger</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_BUTTON" xml:space="preserve">
+		<value> and select the Simple Button object</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_DISPLAY" xml:space="preserve">
+		<value> and select the Simple Display object</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_LAMP" xml:space="preserve">
+		<value> and select the Simple Lightbulb object</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_SAVE" xml:space="preserve">
+		<value>, point to the Save button and press the trigger 
+</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_VIEW" xml:space="preserve">
+		<value>, point to the Mode Change button and press the trigger</value>
+	</data>
+	<data name="ONBOARDING_POPUP_PREVIEW_MENU_CHANGE_MODE" xml:space="preserve">
+		<value>Well done! Now let’s learn how to change game modes.
+Press the menu button and click the eye icon</value>
+	</data>
+	<data name="ONBOARDING_POPUP_START_BUTTON" xml:space="preserve">
+		<value>Start</value>
+	</data>
+	<data name="ONBOARDING_TOOLTIP_POINTER_CLICK_EYE" xml:space="preserve">
+		<value>Point the ray at the eye icon and press the trigger</value>
+	</data>
+	<data name="ONBOARDING_TOOLTIP_PRESS_EYE_ICON" xml:space="preserve">
+		<value>Click the eye icon to proceed to Edit mode</value>
+	</data>
+	<data name="PHOTON_DISCONECT" xml:space="preserve">
+		<value>Multiplayer server disconnected</value>
+	</data>
+	<data name="PROJECT_CONFIG_ERROR" xml:space="preserve">
+		<value>Error. Project configuration is not loaded</value>
+	</data>
+	<data name="PROJECT_CONFIG_NULL" xml:space="preserve">
+		<value>Project configuration does not exist</value>
+	</data>
+	<data name="READ_LAUNCH_ARGS_RABBIR_ERROR" xml:space="preserve">
+		<value>Error. Server is unavailable</value>
+	</data>
+	<data name="ROOM_CREATING" xml:space="preserve">
+		<value>Creating room...</value>
+	</data>
+	<data name="RUNTIME_CODE_ERROR" xml:space="preserve">
+		<value>Runtime code error</value>
+	</data>
+	<data name="SAVE" xml:space="preserve">
+		<value>Save</value>
+	</data>
+	<data name="SAVE_ERROR" xml:space="preserve">
+		<value>Can't save </value>
+	</data>
+	<data name="SAVED" xml:space="preserve">
+		<value>Saved</value>
+	</data>
+	<data name="SCENE_LOADING" xml:space="preserve">
+		<value>Scene template loading...</value>
+	</data>
+	<data name="SCENE_OBJECTS" xml:space="preserve">
+		<value>objects on scene</value>
+	</data>
+	<data name="SEND_REPORT" xml:space="preserve">
+		<value>Send report</value>
+	</data>
+	<data name="SPAWN_POINT_ERROR" xml:space="preserve">
+		<value>Player spawn point not found</value>
+	</data>
+	<data name="SPAWN_WITH_PARENT" xml:space="preserve">
+		<value>Create new objects, assigning this object as parent</value>
+	</data>
+	<data name="TRY_AGAIN" xml:space="preserve">
+		<value>Try again</value>
+	</data>
+	<data name="TRY_TO_CONNECT_TO_RANDOM_ROOM" xml:space="preserve">
+		<value>Trying to connect to random room...</value>
+	</data>
+	<data name="TUTORIAL_MOVE_ME" xml:space="preserve">
+		<value>MOVE ME</value>
+	</data>
+	<data name="TUTORIAL_POPUP_BACK_TO_RMS" xml:space="preserve">
+		<value>Well done! Take off your headset and proceed to logic editor</value>
+	</data>
+	<data name="TUTORIAL_POPUP_HAPPY_END" xml:space="preserve">
+		<value>You've learned how to change modes. Well done! Now you are ready to create and edit your own VR projects.</value>
+	</data>
+	<data name="TUTORIAL_POPUP_HELLO" xml:space="preserve">
+		<value>Welcome to Varwin tutorial</value>
+	</data>
+	<data name="TUTORIAL_POPUP_LOGIC_START" xml:space="preserve">
+		<value>Preview mode is on. Logic is being executed. Time to press the Button!</value>
+	</data>
+	<data name="TUTORIAL_POPUP_MOVING" xml:space="preserve">
+		<value>To move around the scene: press the touchpad, point the ray at the area you want to go to, then release the touchpad</value>
+	</data>
+	<data name="TUTORIAL_POPUP_OBJECT_MOVE" xml:space="preserve">
+		<value>You've spawned the {0}. Now you can move it using the Grip button</value>
+	</data>
+	<data name="TUTORIAL_POPUP_OPEN_MENU" xml:space="preserve">
+		<value>Open the menu{0}</value>
+	</data>
+	<data name="TUTORIAL_TOOL_TIP_BUTTON_USE" xml:space="preserve">
+		<value>Move your controller to the Button and press the trigger</value>
+	</data>
+	<data name="TUTORIAL_TOOL_TIP_PRESS_ME" xml:space="preserve">
+		<value>PUSH ME</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_CANCEL_SPAWN" xml:space="preserve">
+		<value>Cancel choice</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_GRIP" xml:space="preserve">
+		<value>Press and hold to move the object</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_MOVING" xml:space="preserve">
+		<value>Press the touchpad, point the ray at the area where you want to go to, then release the touchpad</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OBJECT_SELECT" xml:space="preserve">
+		<value>Point the ray at the {0} object and press the trigger</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OBJECT_SPAWN" xml:space="preserve">
+		<value>Press the trigger to spawn the {0} object</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OPEN_MENU" xml:space="preserve">
+		<value>Press the button to open the menu</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_POINTER_CLICK" xml:space="preserve">
+		<value>Point the ray at the {0} button and press the trigger</value>
+	</data>
+	<data name="UNKNOWN_ERROR" xml:space="preserve">
+		<value>Unknown error</value>
+	</data>
+	<data name="UNLINK_PARENT" xml:space="preserve">
+		<value>Unparent object</value>
+	</data>
+	<data name="YES" xml:space="preserve">
+		<value>Yes</value>
+	</data>
+</root>

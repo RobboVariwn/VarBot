@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BUTTON" xml:space="preserve">
+		<value>BUTTON</value>
+	</data>
+	<data name="CANCEL" xml:space="preserve">
+		<value>CANCEL</value>
+	</data>
+	<data name="CANNOT_DELETE_OBJECT_LOGIC" xml:space="preserve">
+		<value>CANNOT_DELETE_OBJECT_LOGIC</value>
+	</data>
+	<data name="CANNOT_NOT_PREVEW" xml:space="preserve">
+		<value>CANNOT_NOT_PREVEW</value>
+	</data>
+	<data name="CHOOSE_PARENT" xml:space="preserve">
+		<value>CHOOSE_PARENT</value>
+	</data>
+	<data name="CHOOSE_PROJECT_CONFIG" xml:space="preserve">
+		<value>CHOOSE_PROJECT_CONFIG</value>
+	</data>
+	<data name="CLOSE_BUTTON" xml:space="preserve">
+		<value>Close button text</value>
+	</data>
+	<data name="COMPILE_CODE_ERROR" xml:space="preserve">
+		<value>COMPILE_CODE_ERROR</value>
+	</data>
+	<data name="CONNECTING" xml:space="preserve">
+		<value>CONNECTING</value>
+	</data>
+	<data name="CURRENT_LOCATION_DELETED" xml:space="preserve">
+		<value>CURRENT_LOCATION_DELETED</value>
+	</data>
+	<data name="DELETE_OBJECT" xml:space="preserve">
+		<value>DELETE_OBJECT</value>
+	</data>
+	<data name="DISPLAY" xml:space="preserve">
+		<value>DISPLAY</value>
+	</data>
+	<data name="ENTER_ROOM" xml:space="preserve">
+		<value>ENTER_ROOM</value>
+	</data>
+	<data name="ENVIRONMENT_NOT_FOUND" xml:space="preserve">
+		<value>ENVIRONMENT_NOT_FOUND</value>
+	</data>
+	<data name="ERROR_READ_STARTUP_ARGS" xml:space="preserve">
+		<value>ERROR_READ_STARTUP_ARGS</value>
+	</data>
+	<data name="ERROR_SERVER_DISCONECT" xml:space="preserve">
+		<value>ERROR_SERVER_DISCONECT</value>
+	</data>
+	<data name="EXCECUTE_LOGIC_ERROR" xml:space="preserve">
+		<value>EXCECUTE_LOGIC_ERROR</value>
+	</data>
+	<data name="EXCEPTION_IN_OBJECT" xml:space="preserve">
+		<value>EXCEPTION_IN_OBJECT</value>
+	</data>
+	<data name="EXIT" xml:space="preserve">
+		<value>EXIT</value>
+	</data>
+	<data name="GET_LOCATION_DATA" xml:space="preserve">
+		<value>GET_LOCATION_DATA</value>
+	</data>
+	<data name="GROUP_NOT_SAVED" xml:space="preserve">
+		<value>GROUP_NOT_SAVED</value>
+	</data>
+	<data name="HEADSET_TRACKING_LOST" xml:space="preserve">
+		<value>HEADSET_TRACKING_LOST</value>
+	</data>
+	<data name="INIT_LOGIC_ERROR" xml:space="preserve">
+		<value>INIT_LOGIC_ERROR</value>
+	</data>
+	<data name="JOIN_TO_ROOM" xml:space="preserve">
+		<value>JOIN_TO_ROOM</value>
+	</data>
+	<data name="LAMP" xml:space="preserve">
+		<value>LAMP</value>
+	</data>
+	<data name="LETS_GO" xml:space="preserve">
+		<value>LETS_GO</value>
+	</data>
+	<data name="LICENSE_KEY_ERROR" xml:space="preserve">
+		<value>LICENSE_KEY_ERROR</value>
+	</data>
+	<data name="LOAD_OBJECT_ERROR" xml:space="preserve">
+		<value>LOAD_OBJECT_ERROR</value>
+	</data>
+	<data name="LOAD_PROJECTS_ERROR" xml:space="preserve">
+		<value>LOAD_PROJECTS_ERROR</value>
+	</data>
+	<data name="LOAD_SCENE_ERROR" xml:space="preserve">
+		<value>LOAD_SCENE_ERROR</value>
+	</data>
+	<data name="LOADING" xml:space="preserve">
+		<value>LOADING</value>
+	</data>
+	<data name="LOADING_FILE" xml:space="preserve">
+		<value>LOADING_FILE</value>
+	</data>
+	<data name="LOADING_LOCATION" xml:space="preserve">
+		<value>LOADING_LOCATION</value>
+	</data>
+	<data name="MODE" xml:space="preserve">
+		<value>Mode UIMenu button</value>
+	</data>
+	<data name="NO" xml:space="preserve">
+		<value>NO</value>
+	</data>
+	<data name="NOT_FOR_COMMERCIAL_USE" xml:space="preserve">
+		<value>NOT_FOR_COMMERCIAL_USE</value>
+	</data>
+	<data name="OK" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_CHANGE_MODE" xml:space="preserve">
+		<value>Text for uimenu change mode button</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_BUTTON" xml:space="preserve">
+		<value>ONBOARDING_POPUP_MENU_SELECT_BUTTON</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_DISPLAY" xml:space="preserve">
+		<value>ONBOARDING_POPUP_MENU_SELECT_DISPLAY</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_LAMP" xml:space="preserve">
+		<value>ONBOARDING_POPUP_MENU_SELECT_LAMP</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_SAVE" xml:space="preserve">
+		<value>ONBOARDING_POPUP_MENU_SELECT_SAVE</value>
+	</data>
+	<data name="ONBOARDING_POPUP_MENU_SELECT_VIEW" xml:space="preserve">
+		<value>ONBOARDING_POPUP_MENU_SELECT_VIEW</value>
+	</data>
+	<data name="ONBOARDING_POPUP_PREVIEW_MENU_CHANGE_MODE" xml:space="preserve">
+		<value>Text popup for when we tell user how to open preview mode change button and move to the edit mode</value>
+	</data>
+	<data name="ONBOARDING_POPUP_START_BUTTON" xml:space="preserve">
+		<value>Button for the hello state popup</value>
+	</data>
+	<data name="ONBOARDING_TOOLTIP_POINTER_CLICK_EYE" xml:space="preserve">
+		<value>Tooltip for when the player needs to click eye with the trigger to change modes.</value>
+	</data>
+	<data name="ONBOARDING_TOOLTIP_PRESS_EYE_ICON" xml:space="preserve">
+		<value>Tooltip over the eye icon telling that you need to click it</value>
+	</data>
+	<data name="PHOTON_DISCONECT" xml:space="preserve">
+		<value>PHOTON_DISCONECT</value>
+	</data>
+	<data name="PROJECT_CONFIG_ERROR" xml:space="preserve">
+		<value>PROJECT_CONFIG_ERROR</value>
+	</data>
+	<data name="PROJECT_CONFIG_NULL" xml:space="preserve">
+		<value>PROJECT_CONFIG_NULL</value>
+	</data>
+	<data name="READ_LAUNCH_ARGS_RABBIR_ERROR" xml:space="preserve">
+		<value>READ_LAUNCH_ARGS_RABBIR_ERROR</value>
+	</data>
+	<data name="ROOM_CREATING" xml:space="preserve">
+		<value>ROOM_CREATING</value>
+	</data>
+	<data name="RUNTIME_CODE_ERROR" xml:space="preserve">
+		<value>RUNTIME_CODE_ERROR</value>
+	</data>
+	<data name="SAVE" xml:space="preserve">
+		<value>SAVE</value>
+	</data>
+	<data name="SAVE_ERROR" xml:space="preserve">
+		<value>SAVE_ERROR</value>
+	</data>
+	<data name="SAVED" xml:space="preserve">
+		<value>SAVED</value>
+	</data>
+	<data name="SCENE_LOADING" xml:space="preserve">
+		<value>SCENE_LOADING</value>
+	</data>
+	<data name="SCENE_OBJECTS" xml:space="preserve">
+		<value>SCENE_OBJECTS</value>
+	</data>
+	<data name="SEND_REPORT" xml:space="preserve">
+		<value>SEND_REPORT</value>
+	</data>
+	<data name="SPAWN_POINT_ERROR" xml:space="preserve">
+		<value>SPAWN_POINT_ERROR</value>
+	</data>
+	<data name="SPAWN_WITH_PARENT" xml:space="preserve">
+		<value>SPAWN_WITH_PARENT</value>
+	</data>
+	<data name="TRY_AGAIN" xml:space="preserve">
+		<value>TRY_AGAIN</value>
+	</data>
+	<data name="TRY_TO_CONNECT_TO_RANDOM_ROOM" xml:space="preserve">
+		<value>TRY_TO_CONNECT_TO_RANDOM_ROOM</value>
+	</data>
+	<data name="TUTORIAL_MOVE_ME" xml:space="preserve">
+		<value>TUTORIAL_MOVE_ME</value>
+	</data>
+	<data name="TUTORIAL_POPUP_BACK_TO_RMS" xml:space="preserve">
+		<value>TUTORIAL_POPUP_BACK_TO_RMS</value>
+	</data>
+	<data name="TUTORIAL_POPUP_HAPPY_END" xml:space="preserve">
+		<value>TUTORIAL_POPUP_HAPPY_END</value>
+	</data>
+	<data name="TUTORIAL_POPUP_HELLO" xml:space="preserve">
+		<value>TUTORIAL_POPUP_HELLO</value>
+	</data>
+	<data name="TUTORIAL_POPUP_LOGIC_START" xml:space="preserve">
+		<value>TUTORIAL_POPUP_LOGIC_START</value>
+	</data>
+	<data name="TUTORIAL_POPUP_MOVING" xml:space="preserve">
+		<value>TUTORIAL_POPUP_MOVING</value>
+	</data>
+	<data name="TUTORIAL_POPUP_OBJECT_MOVE" xml:space="preserve">
+		<value>TUTORIAL_POPUP_OBJECT_MOVE</value>
+	</data>
+	<data name="TUTORIAL_POPUP_OPEN_MENU" xml:space="preserve">
+		<value>TUTORIAL_POPUP_OPEN_MENU</value>
+	</data>
+	<data name="TUTORIAL_TOOL_TIP_BUTTON_USE" xml:space="preserve">
+		<value>TUTORIAL_TOOL_TIP_BUTTON_USE</value>
+	</data>
+	<data name="TUTORIAL_TOOL_TIP_PRESS_ME" xml:space="preserve">
+		<value>TUTORIAL_TOOL_TIP_PRESS_ME</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_CANCEL_SPAWN" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_CANCEL_SPAWN</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_GRIP" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_GRIP</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_MOVING" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_MOVING</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OBJECT_SELECT" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_OBJECT_SELECT</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OBJECT_SPAWN" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_OBJECT_SPAWN</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_OPEN_MENU" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_OPEN_MENU</value>
+	</data>
+	<data name="TUTORIAL_TOOLTIP_POINTER_CLICK" xml:space="preserve">
+		<value>TUTORIAL_TOOLTIP_POINTER_CLICK</value>
+	</data>
+	<data name="UNKNOWN_ERROR" xml:space="preserve">
+		<value>UNKNOWN_ERROR</value>
+	</data>
+	<data name="UNLINK_PARENT" xml:space="preserve">
+		<value>UNLINK_PARENT</value>
+	</data>
+	<data name="YES" xml:space="preserve">
+		<value>YES</value>
+	</data>
+</root>
