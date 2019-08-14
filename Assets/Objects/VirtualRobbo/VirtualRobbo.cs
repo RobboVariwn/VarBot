@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Varwin.Public;
 using System.Threading;
+using RobboVarwin;
 
 namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 {
@@ -190,17 +191,17 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             switch (direction)
             {
-                case RobboVarwin.Values.RobotDirection_Forward:
+                case Values.RobotDirection_Forward:
                     LeftMotor_Direction = RightMotor_Direction = 1F;
                     break;
-                case RobboVarwin.Values.RobotDirection_Backward:
+                case Values.RobotDirection_Backward:
                     LeftMotor_Direction = RightMotor_Direction = -1F;
                     break;
-                case RobboVarwin.Values.RobotDirection_TurnLeft:
+                case Values.RobotDirection_TurnLeft:
                     LeftMotor_Direction = -1F;
                     RightMotor_Direction = 1F;
                     break;
-                case RobboVarwin.Values.RobotDirection_TurnRight:
+                case Values.RobotDirection_TurnRight:
                     LeftMotor_Direction = 1F;
                     RightMotor_Direction = -1F;
                     break;
@@ -215,6 +216,18 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         public override void TurnRightDegrees(float degrees)
         {
             
+        }
+
+        public override float GetSensorValue(Values.Sensor sensor)
+        {
+            switch (sensor) {
+                case Values.Sensor.TripMeterL:
+                    return LeftEncoder.Steps;
+                case Values.Sensor.TripMeterR:
+                    return RightEncoder.Steps;
+                default:
+                    return -1F;
+            }
         }
     }
 }

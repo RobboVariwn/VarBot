@@ -131,6 +131,85 @@ namespace RobboVarwin
         [Locale(SystemLanguage.English, "set direction", "L", "R", "power L", "R", "%")]
         [Locale(SystemLanguage.Russian, "уст. направление", "Л", "П", "мощность Л", "П", "%")]
         public abstract void SetMotors(string leftDirection, string rightDirection, float leftPercentage, float rightPercentage);
+
+        public abstract float GetSensorValue(Values.Sensor sensor);
+
+        [Getter("sensor_1")]
+        [Locale(SystemLanguage.English, "Sensor 1")]
+        [Locale(SystemLanguage.Russian, "Датчик 1")]
+        public float Sensor1
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.Sensor1);
+            }
+        }
+
+        [Getter("sensor_2")]
+        [Locale(SystemLanguage.English, "Sensor 2")]
+        [Locale(SystemLanguage.Russian, "Датчик 2")]
+        public float Sensor2
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.Sensor2);
+            }
+        }
+
+        [Getter("sensor_3")]
+        [Locale(SystemLanguage.English, "Sensor 3")]
+        [Locale(SystemLanguage.Russian, "Датчик 3")]
+        public float Sensor3
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.Sensor3);
+            }
+        }
+
+        [Getter("sensor_4")]
+        [Locale(SystemLanguage.English, "Sensor 4")]
+        [Locale(SystemLanguage.Russian, "Датчик 4")]
+        public float Sensor4
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.Sensor4);
+            }
+        }
+
+        [Getter("sensor_5")]
+        [Locale(SystemLanguage.English, "Sensor 5")]
+        [Locale(SystemLanguage.Russian, "Датчик 5")]
+        public float Sensor5
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.Sensor5);
+            }
+        }
+
+        [Getter("trip_meter_l")]
+        [Locale(SystemLanguage.English, "Trip meter L")]
+        [Locale(SystemLanguage.Russian, "Счетчик пути Л")]
+        public float TripMeterL
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.TripMeterL);
+            }
+        }
+
+        [Getter("trip_meter_r")]
+        [Locale(SystemLanguage.English, "Trip meter R")]
+        [Locale(SystemLanguage.Russian, "Счетчик пути П")]
+        public float TripMeterR
+        {
+            get
+            {
+                return GetSensorValue(Values.Sensor.TripMeterR);
+            }
+        }
     }
 }
 

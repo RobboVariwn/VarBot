@@ -37003,7 +37003,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 14.08.2019 12:48:43 +03:00
+  BuiltAt: 15.08.2019 0:55:55 +03:00
   CurrentVersionWasBuilt: 1
 --- !u!114 &6318800481449455900
 MonoBehaviour:
@@ -37023,17 +37023,10 @@ MonoBehaviour:
   RobotDirection_TurnRight: 
   MotorDirection_Forward: 
   MotorDirection_Backward: 
-  RobotSensor_Sensor1: 
-  RobotSensor_Sensor2: 
-  RobotSensor_Sensor3: 
-  RobotSensor_Sensor4: 
-  RobotSensor_Sensor5: 
-  RobotSensor_TripMeterL: 
-  RobotSensor_TripMeterR: 
   LeftWheel: {fileID: 1384241462}
   RightWheel: {fileID: 464611395}
-  LeftEncoder: {fileID: 0}
-  RightEncoder: {fileID: 0}
+  LeftEncoder: {fileID: 797048418}
+  RightEncoder: {fileID: 84582196}
 --- !u!114 &266808700057473135
 MonoBehaviour:
   m_ObjectHideFlags: 0

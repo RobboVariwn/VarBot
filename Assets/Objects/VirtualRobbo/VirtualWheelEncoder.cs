@@ -18,7 +18,7 @@ public class VirtualWheelEncoder : MonoBehaviour
     {
         float currentAngle = transform.localEulerAngles.z;
 
-        if (Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle)) > 14.9f)
+        if (Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle)) > 14.99f)
         {
             previousStepAngle = currentAngle;
             Steps++;
