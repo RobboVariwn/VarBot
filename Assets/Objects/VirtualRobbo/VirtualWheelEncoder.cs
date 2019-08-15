@@ -7,20 +7,31 @@ public class VirtualWheelEncoder : MonoBehaviour
     public int Steps;
     
     private float previousStepAngle;
+    public float traveledAngles;
 
     void Start()
     {
         previousStepAngle = transform.localEulerAngles.z;
     }
 
-    void Update()
+    public void Reset()
+    {
+        Steps = 0;
+        previousStepAngle = transform.localEulerAngles.z;
+        traveledAngles = 0;
+    }
+
+    public void CalculateSteps()
     {
         var currentAngle = transform.localEulerAngles.z;
+        traveledAngles += Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle));
+        previousStepAngle = currentAngle;
 
-        if (currentAngle % 15 == 0 && currentAngle != previousStepAngle)
-        {
-            previousStepAngle = currentAngle;
-            Steps++;
-        }
+        Steps = (int)(traveledAngles / 15F);
+    }
+
+    void Update()
+    {
+        CalculateSteps();
     }
 }

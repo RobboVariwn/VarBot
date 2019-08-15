@@ -19,6 +19,7 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             var motor = joint.motor;
             motor.targetVelocity = velocity;
+            motor.force = 20;
             joint.motor = motor;
         }
 
@@ -98,6 +99,7 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             LeftWheel.useMotor = false;
             RightWheel.useMotor = false;
+            UpdateWheels();
         }
 
         public override void MotorsOn()
@@ -113,7 +115,7 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
             MotorsOff();
         }
 
-        private void SingleStep()
+        public override void MotorsOnForSteps(int steps)
         {
             var leftSteps = LeftEncoder.Steps;
             var rightSteps = RightEncoder.Steps;
@@ -122,17 +124,17 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
             while (true)
             {
-                if((LeftEncoder.Steps - leftSteps) >= 1)
+                if ((LeftEncoder.Steps - leftSteps) >= steps)
                 {
                     LeftWheel.useMotor = false;
                 }
 
-                if((RightEncoder.Steps - rightSteps) >= 1)
+                if ((RightEncoder.Steps - rightSteps) >= steps)
                 {
                     RightWheel.useMotor = false;
                 }
 
-                if((LeftEncoder.Steps - leftSteps) >= 1 && (RightEncoder.Steps - rightSteps) >= 1)
+                if ((LeftEncoder.Steps - leftSteps) >= steps && (RightEncoder.Steps - rightSteps) >= steps)
                 {
                     break;
                 }
@@ -141,18 +143,10 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
             MotorsOff();
         }
 
-        public override void MotorsOnForSteps(int steps)
-        {
-            for(int i = 0; i < steps; i++)
-            {
-                SingleStep();
-            }
-        }
-
         public override void ResetTripMeters()
         {
-            LeftEncoder.Steps = 0;
-            RightEncoder.Steps = 0;
+            LeftEncoder.Reset();
+            RightEncoder.Reset();
         }
 
         private float DirectionToFloat(string direction)
