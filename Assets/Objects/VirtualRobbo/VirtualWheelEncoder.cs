@@ -5,8 +5,10 @@ using UnityEngine;
 public class VirtualWheelEncoder : MonoBehaviour
 {
     public int Steps;
+    
 
     private float previousStepAngle;
+    private float realSteps;
 
     void Start()
     {
@@ -18,10 +20,11 @@ public class VirtualWheelEncoder : MonoBehaviour
     {
         float currentAngle = transform.localEulerAngles.z;
 
-        if (Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle)) > 14.99f)
+        if (Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle)) >= 1F)
         {
+            realSteps += Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle)) / 15F;
             previousStepAngle = currentAngle;
-            Steps++;
+            Steps = (int)realSteps;
         }
     }
 }

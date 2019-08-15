@@ -99,7 +99,7 @@ namespace RobboVarwin
         [Action("motors_on_for_steps")]
         [Locale(SystemLanguage.English, "Motors on for", "steps")]
         [Locale(SystemLanguage.Russian, "Включить моторы на", "шагов")]
-        public abstract void MotorsOnForSteps(float steps);
+        public abstract void MotorsOnForSteps(int steps);
 
         [Action("reset_trip_meters")]
         [Locale(SystemLanguage.English, "Reset trip meters")]

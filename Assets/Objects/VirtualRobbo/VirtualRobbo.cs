@@ -122,16 +122,17 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
             while (true)
             {
-                if((LeftEncoder.Steps - leftSteps) >= 1)
+                if((LeftEncoder.Steps - leftSteps) == 1)
                 {
                     LeftWheel.useMotor = false;
                 }
-                if((RightEncoder.Steps - rightSteps) >= 1)
+
+                if((RightEncoder.Steps - rightSteps) == 1)
                 {
                     RightWheel.useMotor = false;
                 }
 
-                if((LeftEncoder.Steps - leftSteps) >= 1 && (RightEncoder.Steps - rightSteps) >= 1)
+                if((LeftEncoder.Steps - leftSteps) == 1 && (RightEncoder.Steps - rightSteps) == 1)
                 {
                     break;
                 }
@@ -140,9 +141,9 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
             MotorsOff();
         }
 
-        public override void MotorsOnForSteps(float steps)
+        public override void MotorsOnForSteps(int steps)
         {
-            for(int i = 0; i < steps; i ++)
+            for(int i = 0; i < steps; i++)
             {
                 SingleStep();
             }
