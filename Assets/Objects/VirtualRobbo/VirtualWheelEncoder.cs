@@ -27,10 +27,15 @@ public class VirtualWheelEncoder : MonoBehaviour
         traveledAngles += Mathf.Abs(Mathf.DeltaAngle(previousStepAngle, currentAngle));
         previousStepAngle = currentAngle;
 
-        Steps = (int)(traveledAngles / 15F);
+        Steps = Mathf.RoundToInt(traveledAngles / 15F);
     }
 
-    void Update()
+    private void Update()
+    {
+        CalculateSteps();
+    }
+
+    void LateUpdate()
     {
         CalculateSteps();
     }

@@ -99,6 +99,12 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             LeftWheel.useMotor = false;
             RightWheel.useMotor = false;
+
+            LeftWheel.GetComponent<Rigidbody>().isKinematic = true;
+            RightWheel.GetComponent<Rigidbody>().isKinematic = true;
+            Thread.Sleep(100);
+            LeftWheel.GetComponent<Rigidbody>().isKinematic = false;
+            RightWheel.GetComponent<Rigidbody>().isKinematic = false;
         }
 
         public override void MotorsOn()
@@ -123,9 +129,6 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
             while (true)
             {
-                LeftEncoder.CalculateSteps();
-                RightEncoder.CalculateSteps();
-
                 if ((LeftEncoder.Steps - leftSteps) >= steps)
                 {
                     LeftWheel.useMotor = false;
