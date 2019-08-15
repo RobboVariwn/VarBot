@@ -122,17 +122,17 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
             while (true)
             {
-                if((LeftEncoder.Steps - leftSteps) == 1)
+                if((LeftEncoder.Steps - leftSteps) >= 1)
                 {
                     LeftWheel.useMotor = false;
                 }
 
-                if((RightEncoder.Steps - rightSteps) == 1)
+                if((RightEncoder.Steps - rightSteps) >= 1)
                 {
                     RightWheel.useMotor = false;
                 }
 
-                if((LeftEncoder.Steps - leftSteps) == 1 && (RightEncoder.Steps - rightSteps) == 1)
+                if((LeftEncoder.Steps - leftSteps) >= 1 && (RightEncoder.Steps - rightSteps) >= 1)
                 {
                     break;
                 }
@@ -159,9 +159,9 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             switch (direction)
             {
-                case RobboVarwin.Values.MotorDirection_Forward:
+                case Values.MotorDirection_Forward:
                     return 1F;
-                case RobboVarwin.Values.MotorDirection_Backward:
+                case Values.MotorDirection_Backward:
                     return -1F;
                 default:
                     return 1F;

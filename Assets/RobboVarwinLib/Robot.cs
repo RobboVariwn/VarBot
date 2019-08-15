@@ -192,22 +192,22 @@ namespace RobboVarwin
         [Getter("trip_meter_l")]
         [Locale(SystemLanguage.English, "Trip meter L")]
         [Locale(SystemLanguage.Russian, "Счетчик пути Л")]
-        public float TripMeterL
+        public int TripMeterL
         {
             get
             {
-                return GetSensorValue(Values.Sensor.TripMeterL);
+                return Mathf.RoundToInt(GetSensorValue(Values.Sensor.TripMeterL));
             }
         }
 
         [Getter("trip_meter_r")]
         [Locale(SystemLanguage.English, "Trip meter R")]
         [Locale(SystemLanguage.Russian, "Счетчик пути П")]
-        public float TripMeterR
+        public int TripMeterR
         {
             get
             {
-                return GetSensorValue(Values.Sensor.TripMeterR);
+                return Mathf.RoundToInt(GetSensorValue(Values.Sensor.TripMeterR));
             }
         }
     }
