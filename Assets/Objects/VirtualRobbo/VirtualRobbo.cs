@@ -102,7 +102,7 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
             LeftWheel.GetComponent<Rigidbody>().isKinematic = true;
             RightWheel.GetComponent<Rigidbody>().isKinematic = true;
-            Thread.Sleep(100);
+            Thread.Sleep(1);
             LeftWheel.GetComponent<Rigidbody>().isKinematic = false;
             RightWheel.GetComponent<Rigidbody>().isKinematic = false;
         }
@@ -210,12 +210,18 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
         public override void TurnLeftDegrees(float degrees)
         {
-            
+            UpdateWheelVelocity(LeftWheel, MaximumTorgue * -0.3F);
+            UpdateWheelVelocity(RightWheel, MaximumTorgue * 0.3F);
+            MotorsOnForSteps(Mathf.RoundToInt(degrees / 90F * 17F));
+            UpdateWheels();
         }
 
         public override void TurnRightDegrees(float degrees)
         {
-            
+            UpdateWheelVelocity(LeftWheel, MaximumTorgue * 0.3F);
+            UpdateWheelVelocity(RightWheel, MaximumTorgue * -0.3F);
+            MotorsOnForSteps(Mathf.RoundToInt(degrees / 90F * 17F));
+            UpdateWheels();
         }
 
         public override float GetSensorValue(Values.Sensor sensor)
