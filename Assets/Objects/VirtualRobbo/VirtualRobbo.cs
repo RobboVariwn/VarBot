@@ -99,7 +99,6 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         {
             LeftWheel.useMotor = false;
             RightWheel.useMotor = false;
-            UpdateWheels();
         }
 
         public override void MotorsOn()
@@ -124,6 +123,9 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
             while (true)
             {
+                LeftEncoder.CalculateSteps();
+                RightEncoder.CalculateSteps();
+
                 if ((LeftEncoder.Steps - leftSteps) >= steps)
                 {
                     LeftWheel.useMotor = false;
