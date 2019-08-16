@@ -6,7 +6,7 @@ using Varwin.Public;
 
 public class VirtualStartButton : MonoBehaviour, IUseStartAware, ITouchStartAware, IUseEndAware, ITouchEndAware
 {
-    public bool StartButtonPressed;
+    public bool Pressed;
 
     private Vector3 targetScale;
     private Vector3 targetPosition;
@@ -19,7 +19,7 @@ public class VirtualStartButton : MonoBehaviour, IUseStartAware, ITouchStartAwar
 
     void Start()
     {
-        StartButtonPressed = false;
+        Pressed = false;
 
         normalScale = transform.localScale;
         hoveredScale = new Vector3(normalScale.x * 1.2f, normalScale.y, normalScale.z * 1.2F);
@@ -32,8 +32,8 @@ public class VirtualStartButton : MonoBehaviour, IUseStartAware, ITouchStartAwar
 
     void Update()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, targetPosition, Time.deltaTime * 1.7F);
-        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * 1.7F);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, targetPosition, Time.deltaTime * 5F);
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * 5F);
     }
 
     public void OnTouchStart()
@@ -49,12 +49,12 @@ public class VirtualStartButton : MonoBehaviour, IUseStartAware, ITouchStartAwar
     public void OnUseStart(UsingContext context)
     {
         targetPosition = pressedPosition;
-        StartButtonPressed = true;
+        Pressed = true;
     }
 
     public void OnUseEnd()
     {
         targetPosition = normalPositon;
-        StartButtonPressed = false;
+        Pressed = false;
     }
 }

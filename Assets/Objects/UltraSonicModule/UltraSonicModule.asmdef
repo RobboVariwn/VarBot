@@ -1,8 +1,7 @@
 {
-    "name": "VirtualRobbo_d948cb30690c4f29936b5f7625e2487f",
+    "name": "UltraSonicModule_888c0eb5502c4550b581e51f6e87e8a3",
     "references": [
         "VarwinCore",
-        "RobboVarwin",
         "VirtualModule"
     ],
     "optionalUnityReferences": [],

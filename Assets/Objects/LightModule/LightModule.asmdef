@@ -1,8 +1,7 @@
 {
-    "name": "VirtualRobbo_d948cb30690c4f29936b5f7625e2487f",
+    "name": "LightModule_b9487890204e4726b79581b11898d638",
     "references": [
         "VarwinCore",
-        "RobboVarwin",
         "VirtualModule"
     ],
     "optionalUnityReferences": [],

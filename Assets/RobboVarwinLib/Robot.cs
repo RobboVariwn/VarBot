@@ -42,6 +42,70 @@ namespace RobboVarwin
 
 
 
+        [Value("robot_sensor")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Sensor 1")]
+        [Locale(SystemLanguage.Russian, "Датчик 1")]
+        public string RobotSensor_1;
+
+        [Value("robot_sensor")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Sensor 2")]
+        [Locale(SystemLanguage.Russian, "Датчик 2")]
+        public string RobotSensor_2;
+
+        [Value("robot_sensor")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Sensor 3")]
+        [Locale(SystemLanguage.Russian, "Датчик 3")]
+        public string RobotSensor_3;
+
+        [Value("robot_sensor")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Sensor 4")]
+        [Locale(SystemLanguage.Russian, "Датчик 4")]
+        public string RobotSensor_4;
+
+        [Value("robot_sensor")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Sensor 5")]
+        [Locale(SystemLanguage.Russian, "Датчик 5")]
+        public string RobotSensor_5;
+
+
+
+        [Value("led_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Position 1")]
+        [Locale(SystemLanguage.Russian, "Позиция 1")]
+        public string RobotLedPosition_1;
+
+        [Value("led_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Position 2")]
+        [Locale(SystemLanguage.Russian, "Позиция 2")]
+        public string RobotLedPosition_2;
+
+        [Value("led_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Position 3")]
+        [Locale(SystemLanguage.Russian, "Позиция 3")]
+        public string RobotLedPosition_3;
+
+        [Value("led_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Position 4")]
+        [Locale(SystemLanguage.Russian, "Позиция 4")]
+        public string RobotLedPosition_4;
+
+        [Value("led_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Position 5")]
+        [Locale(SystemLanguage.Russian, "Позиция 5")]
+        public string RobotLedPosition_5;
+
+
+
         [Value("motor_direction")]
         [HideInInspector]
         [Locale(SystemLanguage.English, "Forward")]
@@ -103,7 +167,7 @@ namespace RobboVarwin
 
         [Action("reset_trip_meters")]
         [Locale(SystemLanguage.English, "Reset trip meters")]
-        [Locale(SystemLanguage.Russian, "Сбросить пройденный путь")]
+        [Locale(SystemLanguage.Russian, "Обнулить счетчик пути")]
         public abstract void ResetTripMeters();
 
         [Action("turn_right_degrees")]
@@ -128,9 +192,21 @@ namespace RobboVarwin
 
         [Action("set_lr_motors")]
         [Values("motor_direction")]
-        [Locale(SystemLanguage.English, "set direction", "L", "R", "power L", "R", "%")]
-        [Locale(SystemLanguage.Russian, "уст. направление", "Л", "П", "мощность Л", "П", "%")]
+        [Locale(SystemLanguage.English, "Set direction", "L", "R", "power L", "R", "%")]
+        [Locale(SystemLanguage.Russian, "Уст. направление", "Л", "П", "мощность Л", "П", "%")]
         public abstract void SetMotors(string leftDirection, string rightDirection, float leftPercentage, float rightPercentage);
+
+        [Action("led_on")]
+        [Values("led_position")]
+        [Locale(SystemLanguage.English, "Turn on robot led in")]
+        [Locale(SystemLanguage.Russian, "Вкл. светодиод на")]
+        public abstract void LedOn(string position);
+
+        [Action("led_off")]
+        [Values("led_position")]
+        [Locale(SystemLanguage.English, "Turn off robot led in")]
+        [Locale(SystemLanguage.Russian, "Выкл. светодиод на")]
+        public abstract void LedOff(string position);
 
         public abstract float GetSensorValue(Values.Sensor sensor);
 
@@ -210,6 +286,11 @@ namespace RobboVarwin
                 return Mathf.RoundToInt(GetSensorValue(Values.Sensor.TripMeterR));
             }
         }
+
+        [Checker("start_pressed")]
+        [Locale(SystemLanguage.English, "Start button pressed")]
+        [Locale(SystemLanguage.Russian, "Кнопка старт нажата")]
+        public abstract bool StartButtonPressed();
     }
 }
 

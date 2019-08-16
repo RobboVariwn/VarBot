@@ -2,6 +2,7 @@
 using Varwin.Public;
 using System.Threading;
 using RobboVarwin;
+using VirtualModule;
 
 namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 {
@@ -86,6 +87,14 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
         public VirtualWheelEncoder LeftEncoder;
         public VirtualWheelEncoder RightEncoder;
+
+        public VirtualStartButton StartButton;
+
+        public VirtualMagnetPlate Plate1;
+        public VirtualMagnetPlate Plate2;
+        public VirtualMagnetPlate Plate3;
+        public VirtualMagnetPlate Plate4;
+        public VirtualMagnetPlate Plate5;
 
         void Start()
         {
@@ -231,8 +240,71 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
                     return LeftEncoder.Steps;
                 case Values.Sensor.TripMeterR:
                     return RightEncoder.Steps;
+                case Values.Sensor.Sensor1:
+                    return Plate1.Read<float>() ?? -1F;
+                case Values.Sensor.Sensor2:
+                    return Plate2.Read<float>() ?? -1F;
+                case Values.Sensor.Sensor3:
+                    return Plate3.Read<float>() ?? -1F;
+                case Values.Sensor.Sensor4:
+                    return Plate4.Read<float>() ?? -1F;
+                case Values.Sensor.Sensor5:
+                    return Plate5.Read<float>() ?? -1F;
                 default:
                     return -1F;
+            }
+        }
+
+        public override bool StartButtonPressed()
+        {
+            return StartButton.Pressed;
+        }
+
+        public override void LedOn(string position)
+        {
+            switch (position)
+            {
+                case Values.RobotLedPosition_1:
+                    Plate1.Write(true);
+                    break;
+                case Values.RobotLedPosition_2:
+                    Plate2.Write(true);
+                    break;
+                case Values.RobotLedPosition_3:
+                    Plate3.Write(true);
+                    break;
+                case Values.RobotLedPosition_4:
+                    Plate4.Write(true);
+                    break;
+                case Values.RobotLedPosition_5:
+                    Plate5.Write(true);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public override void LedOff(string position)
+        {
+            switch (position)
+            {
+                case Values.RobotLedPosition_1:
+                    Plate1.Write(false);
+                    break;
+                case Values.RobotLedPosition_2:
+                    Plate2.Write(false);
+                    break;
+                case Values.RobotLedPosition_3:
+                    Plate3.Write(false);
+                    break;
+                case Values.RobotLedPosition_4:
+                    Plate4.Write(false);
+                    break;
+                case Values.RobotLedPosition_5:
+                    Plate5.Write(false);
+                    break;
+                default:
+                    break;
             }
         }
     }

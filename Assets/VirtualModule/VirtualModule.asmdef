@@ -1,9 +1,7 @@
 {
-    "name": "VirtualRobbo_d948cb30690c4f29936b5f7625e2487f",
+    "name": "VirtualModule",
     "references": [
-        "VarwinCore",
-        "RobboVarwin",
-        "VirtualModule"
+        "VarwinCore"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],
