@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: f055376f4134afc41b45e016151f8401
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body1
+    100002: Body1 1
+    100004: Body1 10
+    100006: Body1 11
+    100008: Body1 12
+    100010: Body1 13
+    100012: Body1 14
+    100014: Body1 2
+    100016: Body1 3
+    100018: Body1 4
+    100020: Body1 5
+    100022: Body1 6
+    100024: Body1 7
+    100026: Body1 8
+    100028: Body1 9
+    100030: Body2
+    100032: Body2 1
+    100034: Body2 2
+    100036: Body2 3
+    100038: DIN 912 M3x0.5 14mm v1
+    100040: DIN 912 M3x0.5 14mm v1 1
+    100042: DIN 912 M3x0.5 14mm v1:1
+    100044: DIN 912 M3x0.5 14mm v1:2
+    100046: DIN 912 M3x0.5 18mm v1
+    100048: DIN 912 M3x0.5 18mm v1 1
+    100050: DIN 912 M3x0.5 18mm v1:1
+    100052: DIN 912 M3x0.5 18mm v1:2
+    100054: DIN 934 M3 v1
+    100056: DIN 934 M3 v1 1
+    100058: DIN 934 M3 v1 2
+    100060: DIN 934 M3 v1 3
+    100062: DIN 934 M3 v1:1
+    100064: DIN 934 M3 v1:2
+    100066: DIN 934 M3 v1:3
+    100068: DIN 934 M3 v1:4
+    100070: //RootNode
+    100072: magnet d5x8 v1
+    100074: magnet d5x8 v1 1
+    100076: magnet d5x8 v1 2
+    100078: magnet d5x8 v1:2
+    100080: magnet d5x8 v1:3
+    100082: magnet d5x8 v1:4
+    100084: magnet d6x3 v2
+    100086: magnet d6x3 v2 1
+    100088: magnet d6x3 v2 2
+    100090: magnet d6x3 v2:1
+    100092: magnet d6x3 v2:3
+    100094: magnet d6x3 v2:4
+    100096: PCB
+    100098: PCB:1
+    100100: ROB-S-P-1
+    100102: ROB-S-P-1 1
+    100104: ROB-S-P-1 v4
+    100106: ROB-S-P-1 v4:1
+    100108: ROB-S-P-1:1
+    100110: ROB-S-P-2
+    100112: ROB-S-P-2 1
+    100114: ROB-S-P-2 v4
+    100116: ROB-S-P-2 v4:1
+    100118: ROB-S-P-2:1
+    100120: ROB-S-P-7
+    100122: ROB-S-P-7 1
+    100124: ROB-S-P-7 v3
+    100126: ROB-S-P-7 v3:1
+    100128: ROB-S-P-7:1
+    100130: ROB-S-P-8
+    100132: ROB-S-P-8 1
+    100134: ROB-S-P-8 v3
+    100136: ROB-S-P-8 v3:1
+    100138: ROB-S-P-8:1
+    100140: Sensor PCB Base v2
+    100142: Sensor PCB Base v2:1
+    100144: Sensor_extension_ref v7
+    100146: Sensor_extension_ref v7 1
+    100148: Sensor_extension_ref v7 2
+    100150: Sensor_extension_ref v7 3
+    100152: Sensor_extension_ref v7:1
+    100154: Sensor_extension_ref v7:1 1
+    100156: Sensor_extension_ref v7:1 2
+    100158: Sensor_extension_ref v7:1 3
+    400000: Body1
+    400002: Body1 1
+    400004: Body1 10
+    400006: Body1 11
+    400008: Body1 12
+    400010: Body1 13
+    400012: Body1 14
+    400014: Body1 2
+    400016: Body1 3
+    400018: Body1 4
+    400020: Body1 5
+    400022: Body1 6
+    400024: Body1 7
+    400026: Body1 8
+    400028: Body1 9
+    400030: Body2
+    400032: Body2 1
+    400034: Body2 2
+    400036: Body2 3
+    400038: DIN 912 M3x0.5 14mm v1
+    400040: DIN 912 M3x0.5 14mm v1 1
+    400042: DIN 912 M3x0.5 14mm v1:1
+    400044: DIN 912 M3x0.5 14mm v1:2
+    400046: DIN 912 M3x0.5 18mm v1
+    400048: DIN 912 M3x0.5 18mm v1 1
+    400050: DIN 912 M3x0.5 18mm v1:1
+    400052: DIN 912 M3x0.5 18mm v1:2
+    400054: DIN 934 M3 v1
+    400056: DIN 934 M3 v1 1
+    400058: DIN 934 M3 v1 2
+    400060: DIN 934 M3 v1 3
+    400062: DIN 934 M3 v1:1
+    400064: DIN 934 M3 v1:2
+    400066: DIN 934 M3 v1:3
+    400068: DIN 934 M3 v1:4
+    400070: //RootNode
+    400072: magnet d5x8 v1
+    400074: magnet d5x8 v1 1
+    400076: magnet d5x8 v1 2
+    400078: magnet d5x8 v1:2
+    400080: magnet d5x8 v1:3
+    400082: magnet d5x8 v1:4
+    400084: magnet d6x3 v2
+    400086: magnet d6x3 v2 1
+    400088: magnet d6x3 v2 2
+    400090: magnet d6x3 v2:1
+    400092: magnet d6x3 v2:3
+    400094: magnet d6x3 v2:4
+    400096: PCB
+    400098: PCB:1
+    400100: ROB-S-P-1
+    400102: ROB-S-P-1 1
+    400104: ROB-S-P-1 v4
+    400106: ROB-S-P-1 v4:1
+    400108: ROB-S-P-1:1
+    400110: ROB-S-P-2
+    400112: ROB-S-P-2 1
+    400114: ROB-S-P-2 v4
+    400116: ROB-S-P-2 v4:1
+    400118: ROB-S-P-2:1
+    400120: ROB-S-P-7
+    400122: ROB-S-P-7 1
+    400124: ROB-S-P-7 v3
+    400126: ROB-S-P-7 v3:1
+    400128: ROB-S-P-7:1
+    400130: ROB-S-P-8
+    400132: ROB-S-P-8 1
+    400134: ROB-S-P-8 v3
+    400136: ROB-S-P-8 v3:1
+    400138: ROB-S-P-8:1
+    400140: Sensor PCB Base v2
+    400142: Sensor PCB Base v2:1
+    400144: Sensor_extension_ref v7
+    400146: Sensor_extension_ref v7 1
+    400148: Sensor_extension_ref v7 2
+    400150: Sensor_extension_ref v7 3
+    400152: Sensor_extension_ref v7:1
+    400154: Sensor_extension_ref v7:1 1
+    400156: Sensor_extension_ref v7:1 2
+    400158: Sensor_extension_ref v7:1 3
+    2100000: Acrylic (Clear)
+    2100002: Stainless Steel - Polished
+    2100004: Stainless Steel - Satin
+    2100006: Plastic - Glossy (Green)
+    2300000: Body1
+    2300002: Body1 1
+    2300004: Body1 10
+    2300006: Body1 11
+    2300008: Body1 12
+    2300010: Body1 13
+    2300012: Body1 14
+    2300014: Body1 2
+    2300016: Body1 3
+    2300018: Body1 4
+    2300020: Body1 5
+    2300022: Body1 6
+    2300024: Body1 7
+    2300026: Body1 8
+    2300028: Body1 9
+    2300030: Body2
+    2300032: Body2 1
+    2300034: Body2 2
+    2300036: Body2 3
+    2300038: ROB-S-P-1 1
+    2300040: ROB-S-P-2 1
+    2300042: ROB-S-P-7 1
+    2300044: ROB-S-P-8 1
+    3300000: Body1
+    3300002: Body1 1
+    3300004: Body1 10
+    3300006: Body1 11
+    3300008: Body1 12
+    3300010: Body1 13
+    3300012: Body1 14
+    3300014: Body1 2
+    3300016: Body1 3
+    3300018: Body1 4
+    3300020: Body1 5
+    3300022: Body1 6
+    3300024: Body1 7
+    3300026: Body1 8
+    3300028: Body1 9
+    3300030: Body2
+    3300032: Body2 1
+    3300034: Body2 2
+    3300036: Body2 3
+    3300038: ROB-S-P-1 1
+    3300040: ROB-S-P-2 1
+    3300042: ROB-S-P-7 1
+    3300044: ROB-S-P-8 1
+    4300000: ROB-S-P-1
+    4300002: ROB-S-P-7
+    4300004: ROB-S-P-2
+    4300006: ROB-S-P-8
+    4300008: Body1
+    4300010: Body1
+    4300012: Body1
+    4300014: Body1
+    4300016: Body1
+    4300018: Body2
+    4300020: Body1
+    4300022: Body2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
