@@ -53,7 +53,7 @@ namespace VirtualModule
 
         public void Write<T>(T data)
         {
-            LastValue = (object)data;
+            LastValue = data;
             connectedModule?.Write(data);
         }
     }

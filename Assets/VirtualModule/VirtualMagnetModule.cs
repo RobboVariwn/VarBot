@@ -9,6 +9,7 @@ namespace VirtualModule
 {
     public abstract class VirtualMagnetModule : MonoBehaviour
     {
+        [HideInInspector]
         public VirtualMagnetPlate ConnectedTo;
 
         private VirtualMagnetPlate hoveredPlate;

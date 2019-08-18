@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 3841974160
+CRC: 1395063283
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: lightmodule_b9487890204e4726b79581b11898d638
+      Name: ultrasonicmodule_888c0eb5502c4550b581e51f6e87e8a3
       Dependencies: {}
