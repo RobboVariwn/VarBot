@@ -101,13 +101,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5516583212559792453}
-  - component: {fileID: 5516583212563183973}
   - component: {fileID: 5516583212562217893}
   - component: {fileID: 6085529476687261238}
   - component: {fileID: 114328563544538240}
   - component: {fileID: 1523543068}
   - component: {fileID: 1523543067}
   - component: {fileID: 3255413936689709695}
+  - component: {fileID: 416689544}
   m_Layer: 0
   m_Name: StreamingTV
   m_TagString: Untagged
@@ -130,14 +130,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5516583212563183973
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5516583212560016741}
-  m_Mesh: {fileID: 4300000, guid: 06f37b144898d8a4c8d1e35a72b89ddc, type: 3}
 --- !u!23 &5516583212562217893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -208,7 +200,7 @@ MonoBehaviour:
     \u044D\u043A\u0440\u0430\u043D\u043E\u043C\",\"en\":\"Share screen\"}}],\"args\":[{\"valueType\":\"Varwin.Wrapper\"}]},{\"name\":\"stop_stream\",\"type\":\"action\",\"items\":[{\"method\":\"StopStream\",\"i18n\":{\"ru\":\"\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
     \u0441\u0442\u0440\u0438\u043C\",\"en\":\"Stop streaming\"}}]},{\"name\":\"start_stream\",\"type\":\"action\",\"items\":[{\"method\":\"StartStream\",\"i18n\":{\"ru\":\"\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C
     \u0441\u0442\u0440\u0438\u043C\",\"en\":\"Start streaming\"}}],\"args\":[{\"valueType\":\"System.String\"}]}]},\"Author\":{\"Name\":\"Alex
-    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-16T14:27:47Z\",\"SdkVersion\":\"0.4.0\"}"
+    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-19T00:51:49Z\",\"SdkVersion\":\"0.4.0\"}"
   ConfigAssetBundle: '{"AssetName":"StreamingTV","Assembly":["StreamingTV_fde2ad18ba314409b14c718caa6375b9.dll"]}'
   Icon: {fileID: 2800000, guid: f38abfd48a0a9134f9ea2498bf49632f, type: 3}
   DeveloperMode: 0
@@ -224,7 +216,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 18.08.2019 10:22:18 +03:00
+  BuiltAt: 19.08.2019 4:14:57 +03:00
   CurrentVersionWasBuilt: 1
 --- !u!54 &1523543068
 Rigidbody:
@@ -268,3 +260,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Id: 10602
+--- !u!33 &416689544
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5516583212560016741}
+  m_Mesh: {fileID: 4300000, guid: 06f37b144898d8a4c8d1e35a72b89ddc, type: 3}

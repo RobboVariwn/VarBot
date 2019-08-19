@@ -1,0 +1,15 @@
+{
+    "name": "ColorSensorDown_e6f11ac67c7e4cbe859c3b375ecfc946",
+    "references": [
+        "VarwinCore",
+        "VirtualModule"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

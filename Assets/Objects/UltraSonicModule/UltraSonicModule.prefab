@@ -41,7 +41,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 500838316}
-  - component: {fileID: 500838320}
   - component: {fileID: 1768373571827576730}
   - component: {fileID: 9218817181900425838}
   - component: {fileID: 810036220}
@@ -70,17 +69,10 @@ Transform:
   m_Children:
   - {fileID: 910511529}
   - {fileID: 363469805}
+  - {fileID: 1934532565}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &500838320
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500838315}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1768373571827576730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConfigBlockly: "{\"Guid\":\"888c0eb5-502c-4550-b581-e51f6e87e8a3\",\"RootGuid\":\"888c0eb5-502c-4550-b581-e51f6e87e8a3\",\"Tags\":[\"us\",\"sonic\",\"sonar\",\"module\",\"robbo\"],\"Embedded\":false,\"MobileReady\":false,\"Config\":{\"type\":\"UltraSonicModule_888c0eb5502c4550b581e51f6e87e8a3.UltraSonicModuleWrapper\",\"i18n\":{\"ru\":\"\u0423\u043B\u044C\u0442\u0440\u0430\u0421\u043E\u043D\u0438\u043A
     \u041C\u043E\u0434\u0443\u043B\u044C\",\"en\":\"UltraSonic Module\"},\"blocks\":[]},\"Author\":{\"Name\":\"Alex
-    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-16T14:27:47Z\",\"SdkVersion\":\"0.4.0\"}"
+    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-19T00:56:30Z\",\"SdkVersion\":\"0.4.0\"}"
   ConfigAssetBundle: '{"AssetName":"UltraSonicModule","Assembly":["UltraSonicModule_888c0eb5502c4550b581e51f6e87e8a3.dll","VirtualModule.dll"]}'
   Icon: {fileID: 2800000, guid: e7845ed2434e7174b97779dcdb31901f, type: 3}
   DeveloperMode: 0
@@ -111,7 +103,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 18.08.2019 11:10:19 +03:00
+  BuiltAt: 19.08.2019 4:14:57 +03:00
   CurrentVersionWasBuilt: 1
 --- !u!114 &9218817181900425838
 MonoBehaviour:
@@ -133,7 +125,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500838315}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -780,3 +772,80 @@ Transform:
   m_Father: {fileID: 910511549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1934532564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934532565}
+  - component: {fileID: 1934532568}
+  - component: {fileID: 1934532567}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934532565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934532564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.047, y: 0.052, z: 1.121}
+  m_LocalScale: {x: 0.079833, y: 0.079833, z: 0.079833}
+  m_Children: []
+  m_Father: {fileID: 500838316}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1934532568
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934532564}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1934532567
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934532564}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: aeafcd61258c2b94a84d10ae6ed74260, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

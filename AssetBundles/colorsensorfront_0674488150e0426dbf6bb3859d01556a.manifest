@@ -1,0 +1,54 @@
+ManifestFileVersion: 0
+CRC: 3077214320
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f98b62fa0a96bde535a765de1b1bab7c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 631c483f3ab5b2b78735049921ae6a48
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: de7338d1ff64bbc44bfbd17b39fb65da, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f274c615d8744f64aa35a8fdb8e98316, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3fec51d85b4466041b8c722d7f8c74ce, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e0fef5926f5abc4abda01eb169b6e87, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Objects/ColorSensorFront/ColorSensorFront.prefab
+Dependencies: []

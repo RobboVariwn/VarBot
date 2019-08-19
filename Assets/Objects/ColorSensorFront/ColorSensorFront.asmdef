@@ -1,0 +1,15 @@
+{
+    "name": "ColorSensorFront_0674488150e0426dbf6bb3859d01556a",
+    "references": [
+        "VarwinCore",
+        "VirtualModule"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

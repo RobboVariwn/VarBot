@@ -21,5 +21,12 @@ using UnityEngine;namespace RobboVarwin
             TripMeterL,
             TripMeterR,
         }
+
+        public enum ClawPosition
+        {
+            Open,
+            HalfOpen,
+            Closed,
+        }
     }
 }

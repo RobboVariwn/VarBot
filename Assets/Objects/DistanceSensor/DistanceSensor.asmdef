@@ -1,0 +1,15 @@
+{
+    "name": "DistanceSensor_c82801fd8cf64f2ebbd9db696f753be7",
+    "references": [
+        "VarwinCore",
+        "VirtualModule"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

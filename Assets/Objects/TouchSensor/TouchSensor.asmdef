@@ -1,0 +1,15 @@
+{
+    "name": "TouchSensor_b7176f56b1334d78877e0d054d652e4d",
+    "references": [
+        "VarwinCore",
+        "VirtualModule"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -120,6 +120,26 @@ namespace RobboVarwin
 
 
 
+        [Value("claw_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Open")]
+        [Locale(SystemLanguage.Russian, "Открыта")]
+        public string ClawPosition_Open;
+
+        [Value("claw_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Half-Open")]
+        [Locale(SystemLanguage.Russian, "Полу-Открыта")]
+        public string ClawPosition_HalfOpen;
+
+        [Value("claw_position")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Closed")]
+        [Locale(SystemLanguage.Russian, "Звкрыта")]
+        public string ClawPosition_Closed;
+
+
+
         [Action("start_thread")]
         [Locale(SystemLanguage.English, "Start ROBBO thread")]
         [Locale(SystemLanguage.Russian, "Запустить РОББО поток")]
@@ -209,6 +229,7 @@ namespace RobboVarwin
         public abstract void LedOff(string position);
 
         public abstract float GetSensorValue(Values.Sensor sensor);
+        public abstract Vector3 GetRGBSensorValue(Values.Sensor sensor);
 
         [Getter("sensor_1")]
         [Locale(SystemLanguage.English, "Sensor 1")]
@@ -287,10 +308,103 @@ namespace RobboVarwin
             }
         }
 
+        [Getter("sensor_1_rgb")]
+        [Locale(SystemLanguage.English, "Sensor 1 RGB")]
+        [Locale(SystemLanguage.Russian, "Датчик 1 RGB")]
+        public float[] Sensor1_RGB
+        {
+            get
+            {
+                var color_vec = GetRGBSensorValue(Values.Sensor.Sensor1);
+                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                return color;
+            }
+        }
+
+        [Getter("sensor_2_rgb")]
+        [Locale(SystemLanguage.English, "Sensor 2 RGB")]
+        [Locale(SystemLanguage.Russian, "Датчик 2 RGB")]
+        public float[] Sensor2_RGB
+        {
+            get
+            {
+                var color_vec =  GetRGBSensorValue(Values.Sensor.Sensor2);
+                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                return color;
+            }
+        }
+
+        [Getter("sensor_3_rgb")]
+        [Locale(SystemLanguage.English, "Sensor 3 RGB")]
+        [Locale(SystemLanguage.Russian, "Датчик 3 RGB")]
+        public float[] Sensor3_RGB
+        {
+            get
+            {
+                var color_vec = GetRGBSensorValue(Values.Sensor.Sensor3);
+                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                return color;
+            }
+        }
+
+        [Getter("sensor_4_rgb")]
+        [Locale(SystemLanguage.English, "Sensor 4 RGB")]
+        [Locale(SystemLanguage.Russian, "Датчик 4 RGB")]
+        public float[] Sensor4_RGB
+        {
+            get
+            {
+                var color_vec = GetRGBSensorValue(Values.Sensor.Sensor4);
+                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                return color;
+            }
+        }
+
+        [Getter("sensor_5_rgb")]
+        [Locale(SystemLanguage.English, "Sensor 5 RGB")]
+        [Locale(SystemLanguage.Russian, "Датчик 5 RGB")]
+        public float[] Sensor5_RGB
+        {
+            get
+            {
+                var color_vec = GetRGBSensorValue(Values.Sensor.Sensor5);
+                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                return color;
+            }
+        }
+
         [Checker("start_pressed")]
         [Locale(SystemLanguage.English, "Start button pressed")]
         [Locale(SystemLanguage.Russian, "Кнопка старт нажата")]
         public abstract bool StartButtonPressed();
+
+        [Action("claw_closed")]
+        [Locale(SystemLanguage.English, "Claw closed")]
+        [Locale(SystemLanguage.Russian, "Клешня закрыта")]
+        public abstract void ClawClosed(string percentage);
+
+        [Action("claw_position")]
+        [Values("claw_position")]
+        [Locale(SystemLanguage.English, "Claw")]
+        [Locale(SystemLanguage.Russian, "Клешня")]
+
+        public void ClawPosition(string position)
+        {
+            switch (position)
+            {
+                case "ClawPosition_Open":
+                    ClawPosition(Values.ClawPosition.Open);
+                    break;
+                case "ClawPosition_HalfOpen":
+                    ClawPosition(Values.ClawPosition.HalfOpen);
+                    break;
+                case "ClawPosition_Closed":
+                    ClawPosition(Values.ClawPosition.Closed);
+                    break;
+            }
+        }
+
+        public abstract void ClawPosition(Values.ClawPosition position);
     }
 }
 

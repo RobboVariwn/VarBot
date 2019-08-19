@@ -96,12 +96,17 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         public VirtualMagnetPlate Plate4;
         public VirtualMagnetPlate Plate5;
 
+        public HingeJoint LeftClaw;
+        public HingeJoint RightClaw;
+
         void Start()
         {
             LeftMotor_Direction = 1;
             RightMotor_Direction = 1;
             LeftMotor_Percentage = 30;
             RightMotor_Percentage = 30;
+
+            Physics.IgnoreCollision(LeftClaw.GetComponentInChildren<Collider>(), RightClaw.GetComponentInChildren<Collider>(), true);
         }
 
         public override void MotorsOff()
@@ -306,6 +311,35 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
                 default:
                     break;
             }
+        }
+
+        public override Vector3 GetRGBSensorValue(Values.Sensor sensor)
+        {
+            switch (sensor)
+            {
+                case Values.Sensor.Sensor1:
+                    return Plate1.Read<Vector3>() ?? new Vector3(-1F, -1F, -1F);
+                case Values.Sensor.Sensor2:
+                    return Plate2.Read<Vector3>() ?? new Vector3(-1F, -1F, -1F);
+                case Values.Sensor.Sensor3:
+                    return Plate3.Read<Vector3>() ?? new Vector3(-1F, -1F, -1F);
+                case Values.Sensor.Sensor4:
+                    return Plate4.Read<Vector3>() ?? new Vector3(-1F, -1F, -1F);
+                case Values.Sensor.Sensor5:
+                    return Plate5.Read<Vector3>() ?? new Vector3(-1F, -1F, -1F);
+                default:
+                    return new Vector3(-1F, -1F, -1F);
+            }
+        }
+
+        public override void ClawClosed(string percentage)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void ClawPosition(Values.ClawPosition position)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

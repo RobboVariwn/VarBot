@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 1395063283
+CRC: 4073247086
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ultrasonicmodule_888c0eb5502c4550b581e51f6e87e8a3
+      Name: touchsensor_b7176f56b1334d78877e0d054d652e4d
       Dependencies: {}

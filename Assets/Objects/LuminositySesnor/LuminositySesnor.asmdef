@@ -1,0 +1,15 @@
+{
+    "name": "LuminositySesnor_eb6b55d433c14f608a1034ff8257c3e2",
+    "references": [
+        "VarwinCore",
+        "VirtualModule"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -1,0 +1,4 @@
+robbo
+virtual
+sensor
+luminosity

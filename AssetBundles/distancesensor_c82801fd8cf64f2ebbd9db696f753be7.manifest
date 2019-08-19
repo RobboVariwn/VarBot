@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 570788945
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3688d2f5642bc1427acab46d2b881d66
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 07df68b3a3621a1691cbfef11a817364
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: de7338d1ff64bbc44bfbd17b39fb65da, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b755d6464e17264c9a6321ef4e3a38b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e0fef5926f5abc4abda01eb169b6e87, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0de522da22a26b84db2ff07d07c26e84, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Objects/DistanceSensor/DistanceSensor.prefab
+Dependencies: []
