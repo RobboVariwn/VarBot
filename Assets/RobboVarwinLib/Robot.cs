@@ -135,7 +135,7 @@ namespace RobboVarwin
         [Value("claw_position")]
         [HideInInspector]
         [Locale(SystemLanguage.English, "Closed")]
-        [Locale(SystemLanguage.Russian, "Звкрыта")]
+        [Locale(SystemLanguage.Russian, "Закрыта")]
         public string ClawPosition_Closed;
 
 
@@ -381,13 +381,12 @@ namespace RobboVarwin
         [Action("claw_closed")]
         [Locale(SystemLanguage.English, "Claw closed")]
         [Locale(SystemLanguage.Russian, "Клешня закрыта")]
-        public abstract void ClawClosed(string percentage);
+        public abstract void ClawClosed(float percentage);
 
-        [Action("claw_position")]
+        [Action("set_claw_position")]
         [Values("claw_position")]
         [Locale(SystemLanguage.English, "Claw")]
         [Locale(SystemLanguage.Russian, "Клешня")]
-
         public void ClawPosition(string position)
         {
             switch (position)

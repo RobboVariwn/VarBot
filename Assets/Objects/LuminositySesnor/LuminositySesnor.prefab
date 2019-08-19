@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684512}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-1 v4:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684514}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-1 v4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684516}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684518}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-1:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684520}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: PCB:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684522}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: PCB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 29684524}
   - component: {fileID: 32551692}
   - component: {fileID: 31584588}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684526}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 29684528}
   - component: {fileID: 32551680}
   - component: {fileID: 31584576}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-7 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684530}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684532}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-7 v3:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684534}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-7 v3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684536}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-2 v4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 29684538}
   - component: {fileID: 32551682}
   - component: {fileID: 31584578}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684540}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-2:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684542}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-2 v4:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684416}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-8:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684418}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-8 v3:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,7 +705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684420}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor PCB Base v2:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684422}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor PCB Base v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684424}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684426}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-7:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684428}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-8 v3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 29684430}
   - component: {fileID: 32551686}
   - component: {fileID: 31584582}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: ROB-S-P-8 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684432}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7:1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684434}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -999,7 +999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684436}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7:1 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684438}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7:1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1061,7 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684440}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684442}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1123,7 +1123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684444}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1154,7 +1154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684446}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor_extension_ref v7 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684576}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 14mm v1:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684578}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 14mm v1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684580}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 18mm v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1280,7 +1280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684582}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 14mm v1:2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,7 +1313,7 @@ GameObject:
   - component: {fileID: 29684584}
   - component: {fileID: 32551688}
   - component: {fileID: 31584584}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body2 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 29684586}
   - component: {fileID: 32551690}
   - component: {fileID: 31584586}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684588}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 14mm v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1499,7 +1499,7 @@ GameObject:
   - component: {fileID: 29684590}
   - component: {fileID: 32551694}
   - component: {fileID: 31584590}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body2 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1574,7 +1574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684592}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,7 +1605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684594}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1636,7 +1636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684596}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684598}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1698,7 +1698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684600}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 18mm v1:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1729,7 +1729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684602}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 18mm v1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1761,7 +1761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684604}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1792,7 +1792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684606}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 912 M3x0.5 18mm v1:2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684480}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d5x8 v1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684482}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d5x8 v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684484}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d5x8 v1:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1916,7 +1916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684486}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d5x8 v1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1947,7 +1947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684488}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1:3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1978,7 +1978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684490}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1:2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2009,7 +2009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684492}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Light Sensor v6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2058,7 +2058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684494}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: DIN 934 M3 v1:4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2089,7 +2089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684496}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d6x3 v2:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2120,7 +2120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684498}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d6x3 v2 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2151,7 +2151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684500}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d6x3 v2:4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684502}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d6x3 v2:3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2213,7 +2213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684504}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d5x8 v1:3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2244,7 +2244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684506}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d5x8 v1:2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2275,7 +2275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684508}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d6x3 v2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2306,7 +2306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29684510}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: magnet d6x3 v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2339,7 +2339,7 @@ GameObject:
   - component: {fileID: 29684544}
   - component: {fileID: 32551776}
   - component: {fileID: 31584672}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2416,7 +2416,7 @@ GameObject:
   - component: {fileID: 29684546}
   - component: {fileID: 32551778}
   - component: {fileID: 31584674}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2493,7 +2493,7 @@ GameObject:
   - component: {fileID: 29684548}
   - component: {fileID: 32551780}
   - component: {fileID: 31584676}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2570,7 +2570,7 @@ GameObject:
   - component: {fileID: 29684550}
   - component: {fileID: 32551782}
   - component: {fileID: 31584678}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2647,7 +2647,7 @@ GameObject:
   - component: {fileID: 29684552}
   - component: {fileID: 32551784}
   - component: {fileID: 31584680}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2724,7 +2724,7 @@ GameObject:
   - component: {fileID: 29684554}
   - component: {fileID: 32551786}
   - component: {fileID: 31584682}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2801,7 +2801,7 @@ GameObject:
   - component: {fileID: 29684556}
   - component: {fileID: 32551788}
   - component: {fileID: 31584684}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +2878,7 @@ GameObject:
   - component: {fileID: 29684558}
   - component: {fileID: 32551790}
   - component: {fileID: 31584686}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2955,7 +2955,7 @@ GameObject:
   - component: {fileID: 29684560}
   - component: {fileID: 32551792}
   - component: {fileID: 31584688}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3032,7 +3032,7 @@ GameObject:
   - component: {fileID: 29684562}
   - component: {fileID: 32551794}
   - component: {fileID: 31584690}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3109,7 +3109,7 @@ GameObject:
   - component: {fileID: 29684564}
   - component: {fileID: 32551796}
   - component: {fileID: 31584692}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3186,7 +3186,7 @@ GameObject:
   - component: {fileID: 29684566}
   - component: {fileID: 32551798}
   - component: {fileID: 31584694}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3263,7 +3263,7 @@ GameObject:
   - component: {fileID: 29684568}
   - component: {fileID: 32551800}
   - component: {fileID: 31584696}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3340,7 +3340,7 @@ GameObject:
   - component: {fileID: 29684570}
   - component: {fileID: 32551802}
   - component: {fileID: 31584698}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3417,7 +3417,7 @@ GameObject:
   - component: {fileID: 29684572}
   - component: {fileID: 32551804}
   - component: {fileID: 31584700}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3494,7 +3494,7 @@ GameObject:
   - component: {fileID: 29684574}
   - component: {fileID: 32551806}
   - component: {fileID: 31584702}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Body1 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3571,7 +3571,7 @@ GameObject:
   - component: {fileID: 708109866}
   - component: {fileID: 708109869}
   - component: {fileID: 708109868}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3653,7 +3653,7 @@ GameObject:
   - component: {fileID: 1000491193}
   - component: {fileID: 6228954113196974179}
   - component: {fileID: 5457428055096803276}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: LuminositySesnor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3720,7 +3720,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 19.08.2019 4:14:56 +03:00
+  BuiltAt: 19.08.2019 15:54:46 +03:00
   CurrentVersionWasBuilt: 1
 --- !u!114 &7369240632781480238
 MonoBehaviour:
@@ -3855,7 +3855,7 @@ GameObject:
   - component: {fileID: 1348942841}
   - component: {fileID: 1348942843}
   - component: {fileID: 1348942842}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

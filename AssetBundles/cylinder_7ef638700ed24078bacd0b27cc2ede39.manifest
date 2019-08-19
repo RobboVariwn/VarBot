@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1199225126
+CRC: 2302753248
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3a9161bc6d5ce1a12c87b67224f20366
+    Hash: c67bd311bdd3001f4c12824f96941635
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 75f7c9b969f5f76bd6f3730d73f7fd77
+    Hash: 5bd94d01258bcc45accb8e98c7862a3c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,20 +27,18 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 54
   Script: {instanceID: 0}
-- Class: 65
+- Class: 64
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: de7338d1ff64bbc44bfbd17b39fb65da, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 8b755d6464e17264c9a6321ef4e3a38b, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 8e0fef5926f5abc4abda01eb169b6e87, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 0de522da22a26b84db2ff07d07c26e84, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 141d860ba1697ef4d86f7f349d0f4b5a, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 Assets:
-- Assets/Objects/DistanceSensor/DistanceSensor.prefab
+- Assets/Objects/Cylinder/Cylinder.prefab
 Dependencies: []

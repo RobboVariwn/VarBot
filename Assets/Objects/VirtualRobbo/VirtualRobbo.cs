@@ -81,6 +81,16 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
         }
 
         private float MaximumTorgue = 700F;
+        private float ClawTargetAngle = 0F;
+        
+        private bool LeftWheel_UseMotor = false;
+        private bool RightWheel_UseMotor = false;
+
+        private bool LeftWheel_IsKinematic = false;
+        private bool RightWheel_IsKinematic = false;
+
+        private Rigidbody LeftWheel_Rigidbody;
+        private Rigidbody RightWheel_Rigidbody;
 
         public HingeJoint LeftWheel;
         public HingeJoint RightWheel;
@@ -106,25 +116,49 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
             LeftMotor_Percentage = 30;
             RightMotor_Percentage = 30;
 
-            Physics.IgnoreCollision(LeftClaw.GetComponentInChildren<Collider>(), RightClaw.GetComponentInChildren<Collider>(), true);
+            LeftWheel_Rigidbody = LeftWheel.GetComponent<Rigidbody>();
+            RightWheel_Rigidbody = RightWheel.GetComponent<Rigidbody>();
+
+            Physics.IgnoreLayerCollision(15, 16, true);
+            Physics.IgnoreLayerCollision(15, 17, true);
+            Physics.IgnoreLayerCollision(16, 17, true);
+        }
+
+        private void Update()
+        {
+            var motor = LeftClaw.motor;
+            var distance = Mathf.DeltaAngle(LeftClaw.gameObject.transform.localEulerAngles.z, -ClawTargetAngle);
+            motor.targetVelocity = distance * 0.7F;
+            LeftClaw.motor = motor;
+
+            motor = RightClaw.motor;
+            distance = Mathf.DeltaAngle(RightClaw.gameObject.transform.localEulerAngles.z, ClawTargetAngle);
+            motor.targetVelocity = distance * 0.7F;
+            RightClaw.motor = motor;
+
+            LeftWheel.useMotor = LeftWheel_UseMotor;
+            RightWheel.useMotor = RightWheel_UseMotor;
+
+            LeftWheel_Rigidbody.isKinematic = LeftWheel_IsKinematic;
+            RightWheel_Rigidbody.isKinematic = RightWheel_IsKinematic;
         }
 
         public override void MotorsOff()
         {
-            LeftWheel.useMotor = false;
-            RightWheel.useMotor = false;
+            LeftWheel_UseMotor = false;
+            RightWheel_UseMotor = false;
 
-            LeftWheel.GetComponent<Rigidbody>().isKinematic = true;
-            RightWheel.GetComponent<Rigidbody>().isKinematic = true;
+            LeftWheel_IsKinematic = true;
+            RightWheel_IsKinematic = true;
             Thread.Sleep(1);
-            LeftWheel.GetComponent<Rigidbody>().isKinematic = false;
-            RightWheel.GetComponent<Rigidbody>().isKinematic = false;
+            LeftWheel_IsKinematic = false;
+            RightWheel_IsKinematic = false;
         }
 
         public override void MotorsOn()
         {
-            LeftWheel.useMotor = true;
-            RightWheel.useMotor = true;
+            LeftWheel_UseMotor = true;
+            RightWheel_UseMotor = true;
         }
 
         public override void MotorsOnForSeconds(float seconds)
@@ -145,12 +179,12 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
             {
                 if ((LeftEncoder.Steps - leftSteps) >= steps)
                 {
-                    LeftWheel.useMotor = false;
+                    LeftWheel_UseMotor = false;
                 }
 
                 if ((RightEncoder.Steps - rightSteps) >= steps)
                 {
-                    RightWheel.useMotor = false;
+                    RightWheel_UseMotor = false;
                 }
 
                 if ((LeftEncoder.Steps - leftSteps) >= steps && (RightEncoder.Steps - rightSteps) >= steps)
@@ -332,14 +366,25 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
             }
         }
 
-        public override void ClawClosed(string percentage)
+        public override void ClawClosed(float percentage)
         {
-            throw new System.NotImplementedException();
+            ClawTargetAngle = 80F / 100F * percentage;
         }
 
         public override void ClawPosition(Values.ClawPosition position)
         {
-            throw new System.NotImplementedException();
+            switch (position)
+            {
+                case Values.ClawPosition.Closed:
+                    ClawTargetAngle = 0F;
+                    break;
+                case Values.ClawPosition.HalfOpen:
+                    ClawTargetAngle = 40F;
+                    break;
+                case Values.ClawPosition.Open:
+                    ClawTargetAngle = 80F;
+                    break;
+            }
         }
     }
 }
