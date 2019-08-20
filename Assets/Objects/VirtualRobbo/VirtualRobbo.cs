@@ -3,13 +3,20 @@ using Varwin.Public;
 using System.Threading;
 using RobboVarwin;
 using VirtualModule;
+using static RobboVarwin.Values;
 
 namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 {
-    [Locale(SystemLanguage.English,"Virtual ROBBO")]
-    [Locale(SystemLanguage.Russian,"Виртуальный РОББО")]
+    [Locale(SystemLanguage.English, "Virtual ROBBO")]
+    [Locale(SystemLanguage.Russian, "Виртуальный РОББО")]
     public class VirtualRobbo : RobboVarwin.Robot
     {
+        private SensorColors[] AllColors = {
+            SensorColors.Red, SensorColors.Magenta, SensorColors.Yellow,
+            SensorColors.Green, SensorColors.Blue, SensorColors.Cyan,
+            SensorColors.Black, SensorColors.Gray, SensorColors.White
+        };
+
         private void UpdateWheels()
         {
             UpdateWheelVelocity(LeftWheel, MaximumTorgue * _LeftMotor_Percentage / 100F * _LeftMotor_Direction);
@@ -82,7 +89,7 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
         private float MaximumTorgue = 700F;
         private float ClawTargetAngle = 0F;
-        
+
         private bool LeftWheel_UseMotor = false;
         private bool RightWheel_UseMotor = false;
 
@@ -274,7 +281,8 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
 
         public override float GetSensorValue(Values.Sensor sensor)
         {
-            switch (sensor) {
+            switch (sensor)
+            {
                 case Values.Sensor.TripMeterL:
                     return LeftEncoder.Steps;
                 case Values.Sensor.TripMeterR:
@@ -384,6 +392,54 @@ namespace Varwin.Types.VirtualRobbo_d948cb30690c4f29936b5f7625e2487f
                 case Values.ClawPosition.Open:
                     ClawTargetAngle = 80F;
                     break;
+            }
+        }
+
+        private Vector3 MapColor(Values.SensorColors color)
+        {
+            switch (color)
+            {
+                case Values.SensorColors.Black:
+                    return (Vector4)Color.black;
+                case Values.SensorColors.Blue:
+                    return (Vector4)Color.blue;
+                case Values.SensorColors.Cyan:
+                    return (Vector4)Color.cyan;
+                case Values.SensorColors.Gray:
+                    return (Vector4)Color.gray;
+                case Values.SensorColors.Green:
+                    return (Vector4)Color.green;
+                case Values.SensorColors.Magenta:
+                    return (Vector4)Color.magenta;
+                case Values.SensorColors.Red:
+                    return (Vector4)Color.red;
+                case Values.SensorColors.White:
+                    return (Vector4)Color.white;
+                case Values.SensorColors.Yellow:
+                    return (Vector4)Color.yellow;
+                default:
+                    return new Vector3(-1F, -1F, -1F);
+            }
+        }
+
+        public override bool ColorSensor(Values.Sensor sensor, Values.SensorColors color)
+        {
+            var sensor_color = GetRGBSensorValue(sensor) / 255F;
+
+            switch (color)
+            {
+                case Values.SensorColors.Unknown:
+                    bool isUnknown = false;
+
+                    foreach (var test_color in AllColors)
+                    {
+                        isUnknown |= (sensor_color - MapColor(test_color)).magnitude < 0.25F;
+                    }
+
+                    return isUnknown;
+                default:
+                    var distance = (sensor_color - MapColor(color)).magnitude;
+                    return distance < 0.25F;
             }
         }
     }

@@ -28,5 +28,19 @@ using UnityEngine;namespace RobboVarwin
             HalfOpen,
             Closed,
         }
+
+        public enum SensorColors
+        {
+            Red,
+            Magenta,
+            Yellow,
+            Green,
+            Blue,
+            Cyan,
+            Black,
+            Gray,
+            White,
+            Unknown,
+        }
     }
 }

@@ -140,6 +140,70 @@ namespace RobboVarwin
 
 
 
+        /* Until Varwin not supports parameters in Checker
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Red")]
+        [Locale(SystemLanguage.Russian, "Красный")]
+        public string SensorColors_Red;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Magenta")]
+        [Locale(SystemLanguage.Russian, "Мажента")]
+        public string SensorColors_Magenta;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Yellow")]
+        [Locale(SystemLanguage.Russian, "Желтый")]
+        public string SensorColors_Yellow;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Green")]
+        [Locale(SystemLanguage.Russian, "Зеленый")]
+        public string SensorColors_Green;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Blue")]
+        [Locale(SystemLanguage.English, "Синий")]
+        public string SensorColors_Blue;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Cyan")]
+        [Locale(SystemLanguage.Russian, "Циан")]
+        public string SensorColors_Cyan;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Black")]
+        [Locale(SystemLanguage.Russian, "Черный")]
+        public string SensorColors_Black;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Gray")]
+        [Locale(SystemLanguage.Russian, "Серый")]
+        public string SensorColors_Gray;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "White")]
+        [Locale(SystemLanguage.Russian, "Белый")]
+        public string SensorColors_White;
+
+        [Value("sensor_colors")]
+        [HideInInspector]
+        [Locale(SystemLanguage.English, "Unknown")]
+        [Locale(SystemLanguage.Russian, "Неизвестный")]
+        public string SensorColors_Unknown;
+        */
+
+
+
         [Action("start_thread")]
         [Locale(SystemLanguage.English, "Start ROBBO thread")]
         [Locale(SystemLanguage.Russian, "Запустить РОББО поток")]
@@ -316,7 +380,7 @@ namespace RobboVarwin
             get
             {
                 var color_vec = GetRGBSensorValue(Values.Sensor.Sensor1);
-                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                float[] color = { color_vec.x, color_vec.y, color_vec.z };
                 return color;
             }
         }
@@ -328,8 +392,8 @@ namespace RobboVarwin
         {
             get
             {
-                var color_vec =  GetRGBSensorValue(Values.Sensor.Sensor2);
-                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                var color_vec = GetRGBSensorValue(Values.Sensor.Sensor2);
+                float[] color = { color_vec.x, color_vec.y, color_vec.z };
                 return color;
             }
         }
@@ -342,7 +406,7 @@ namespace RobboVarwin
             get
             {
                 var color_vec = GetRGBSensorValue(Values.Sensor.Sensor3);
-                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                float[] color = { color_vec.x, color_vec.y, color_vec.z };
                 return color;
             }
         }
@@ -355,7 +419,7 @@ namespace RobboVarwin
             get
             {
                 var color_vec = GetRGBSensorValue(Values.Sensor.Sensor4);
-                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                float[] color = { color_vec.x, color_vec.y, color_vec.z };
                 return color;
             }
         }
@@ -368,7 +432,7 @@ namespace RobboVarwin
             get
             {
                 var color_vec = GetRGBSensorValue(Values.Sensor.Sensor5);
-                float[] color = {color_vec.x, color_vec.y, color_vec.z};
+                float[] color = { color_vec.x, color_vec.y, color_vec.z };
                 return color;
             }
         }
@@ -403,7 +467,66 @@ namespace RobboVarwin
             }
         }
 
+        private Values.SensorColors MapColor(string raw)
+        {
+            switch (raw)
+            {
+                case "SensorColors_Red":
+                    return Values.SensorColors.Red;
+                case "SensorColors_Magenta":
+                    return Values.SensorColors.Magenta;
+                case "SensorColors_Yellow":
+                    return Values.SensorColors.Yellow;
+                case "SensorColors_Green":
+                    return Values.SensorColors.Green;
+                case "SensorColors_Blue":
+                    return Values.SensorColors.Blue;
+                case "SensorColors_Cyan":
+                    return Values.SensorColors.Cyan;
+                case "SensorColors_Black":
+                    return Values.SensorColors.Black;
+                case "SensorColors_Gray":
+                    return Values.SensorColors.Gray;
+                case "SensorColors_White":
+                    return Values.SensorColors.White;
+                case "SensorColors_Unknown":
+                default:
+                    return Values.SensorColors.Unknown;
+            }
+        }
+
+        private Values.Sensor MapSensor(string raw)
+        {
+            switch (raw)
+            {
+                case "RobotSensor_1":
+                    return Values.Sensor.Sensor1;
+                case "RobotSensor_2":
+                    return Values.Sensor.Sensor2;
+                case "RobotSensor_3":
+                    return Values.Sensor.Sensor3;
+                case "RobotSensor_4":
+                    return Values.Sensor.Sensor4;
+                case "RobotSensor_5":
+                    return Values.Sensor.Sensor5;
+                default:
+                    return Values.Sensor.Sensor1;
+            }
+        }
+
+        /* Until Varwin not supports parameters in Checker
+        [Checker("sensor_rgb")]
+        [Values("robot_sensor")]
+        [Locale(SystemLanguage.English, "Color sensor")]
+        [Locale(SystemLanguage.Russian, "Датчик света")]
+        public bool ColorSensor(string sensor, string color)
+        {
+            return ColorSensor(MapSensor(sensor), MapColor(color));
+        }
+        */
+
         public abstract void ClawPosition(Values.ClawPosition position);
+        public abstract bool ColorSensor(Values.Sensor sensor, Values.SensorColors color);
     }
 }
 
