@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConfigBlockly: "{\"Guid\":\"b7176f56-b133-4d78-877e-0d054d652e4d\",\"RootGuid\":\"b7176f56-b133-4d78-877e-0d054d652e4d\",\"Tags\":[\"touch\",\"sensor\",\"robbo\",\"virtual\"],\"Embedded\":false,\"MobileReady\":false,\"Config\":{\"type\":\"TouchSensor_b7176f56b1334d78877e0d054d652e4d.TouchSensorWrapper\",\"i18n\":{\"ru\":\"\u0414\u0430\u0442\u0447\u0438\u043A
     \u043A\u0430\u0441\u0430\u043D\u0438\u044F\",\"en\":\"Touch Sensor\"},\"blocks\":[]},\"Author\":{\"Name\":\"Alex
-    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-19T00:56:30Z\",\"SdkVersion\":\"0.4.0\"}"
+    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-21T11:47:54Z\",\"SdkVersion\":\"0.4.0\"}"
   ConfigAssetBundle: '{"AssetName":"TouchSensor","Assembly":["TouchSensor_b7176f56b1334d78877e0d054d652e4d.dll","VirtualModule.dll"]}'
   Icon: {fileID: 2800000, guid: 6f32b01226f5cfa4da4328a5cb1316ad, type: 3}
   DeveloperMode: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 19.08.2019 15:54:46 +03:00
+  BuiltAt: 21.08.2019 20:07:12 +03:00
   CurrentVersionWasBuilt: 1
 --- !u!114 &4420304273043085322
 MonoBehaviour:

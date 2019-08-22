@@ -32,7 +32,6 @@ namespace VirtualModule
 
         public void Disconnect()
         {
-            connectedModule.transform.parent = null;
             Destroy(connectedModule.GetComponent<FixedJoint>());
             connectedModule = null;
         }
@@ -40,7 +39,6 @@ namespace VirtualModule
         public void Connect(VirtualMagnetModule module)
         {
             connectedModule = module;
-            connectedModule.transform.parent = this.transform;
             connectedModule.transform.position = this.transform.position;
             connectedModule.transform.rotation = this.transform.rotation;
             (connectedModule.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint).connectedBody = parent;

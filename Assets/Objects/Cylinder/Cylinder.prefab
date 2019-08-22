@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 101554776}
   - component: {fileID: 101554775}
   - component: {fileID: 101554774}
-  - component: {fileID: 101554773}
   - component: {fileID: 101554777}
   - component: {fileID: 5755461011942059672}
   - component: {fileID: 8795883978540689860}
   - component: {fileID: 7758000945181834527}
   - component: {fileID: 2497898086968814351}
+  - component: {fileID: 8130187288134233337}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -83,20 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &101554773
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101554772}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &101554777
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -105,13 +91,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101554772}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.001
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &5755461011942059672
 MonoBehaviour:
@@ -125,9 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b220ea0c852a049499171b51c58596c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConfigBlockly: 
-  ConfigAssetBundle: 
-  Icon: {fileID: 0}
+  ConfigBlockly: "{\"Guid\":\"7ef63870-0ed2-4078-bacd-0b27cc2ede39\",\"RootGuid\":\"7ef63870-0ed2-4078-bacd-0b27cc2ede39\",\"Tags\":[\"robbo\",\"test\",\"cylinder\"],\"Embedded\":false,\"MobileReady\":false,\"Config\":{\"type\":\"Cylinder_7ef638700ed24078bacd0b27cc2ede39.CylinderWrapper\",\"i18n\":{\"ru\":\"\u0426\u0438\u043B\u0438\u043D\u0434\u0440\",\"en\":\"Cylinder\"},\"blocks\":[]},\"Author\":{\"Name\":\"Alex
+    Str\",\"Email\":\"alex.str.nik@gmail.com\",\"Url\":\"\"},\"License\":{\"Code\":\"cc-by\",\"Version\":\"4.0\"},\"BuiltAt\":\"2019-08-21T17:26:12Z\",\"SdkVersion\":\"0.4.0\"}"
+  ConfigAssetBundle: '{"AssetName":"Cylinder","Assembly":["Cylinder_7ef638700ed24078bacd0b27cc2ede39.dll"]}'
+  Icon: {fileID: 2800000, guid: de8c94d748ca24a48a162d48ef956738, type: 3}
   DeveloperMode: 0
   ShowDebug: 0
   Name: Cylinder
@@ -141,7 +128,7 @@ MonoBehaviour:
   AuthorUrl: 
   LicenseCode: cc-by
   LicenseVersion: 4.0
-  BuiltAt: 19.08.2019 16:32:23 +03:00
+  BuiltAt: 21.08.2019 20:35:34 +03:00
   CurrentVersionWasBuilt: 1
 --- !u!114 &8795883978540689860
 MonoBehaviour:
@@ -213,3 +200,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Id: -119332
+--- !u!136 &8130187288134233337
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101554772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
