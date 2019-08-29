@@ -1,4 +1,4 @@
-# Varbot
+# VarBot
 
 The small project created while Innopolis Summer Project School. 
 Main purpose to integrate physic-based ROBBO model in VARWIN virtual world and transfer RobotScratch blocks to VARWIN.
